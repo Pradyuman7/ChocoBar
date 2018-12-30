@@ -58,3 +58,28 @@ You can also create custom ChocoBars with tons of customizations like this:
 ChocoBar.builder().setBackgroundColor(Color.parseColor("#00bfff")).setTextSize(18).setTextColor(Color.parseColor("#FFFFFF")).setTextTypefaceStyle(Typeface.ITALIC).setText("This is a custom Chocobar").setMaxLines(4).centerText().setActionText("ChocoBar").setActionTextColor(Color.parseColor("#66FFFFFF")).setActionTextSize(20).setActionTextTypefaceStyle(Typeface.BOLD).setIcon(R.mipmap.ic_launcher).setActivity(MainActivity.this).setDuration(ChocoBar.LENGTH_INDEFINITE).build().show();
             
 ```
+
+## Screenshots
+
+**Please click the image below to enlarge.**
+
+<p align="center">
+  <img width="350" height="250" src="https://user-images.githubusercontent.com/41565823/50546049-79e4c280-0c21-11e9-8411-1af312a19002.png">
+</p>
+
+<p align="center">
+  <img width="350" height="250" src="https://user-images.githubusercontent.com/41565823/50546050-79e4c280-0c21-11e9-8afc-36903e71566d.png">
+</p>
+
+<p align="center">
+  <img width="350" height="250" src="https://user-images.githubusercontent.com/41565823/50546051-79e4c280-0c21-11e9-81c0-c0fa1114944d.png">
+</p>
+
+<p align="center">
+  <img width="350" height="250" src="https://user-images.githubusercontent.com/41565823/50546052-7a7d5900-0c21-11e9-9a93-5769c5412d39.png">
+</p>
+
+<p align="center">
+  <img width="350" height="250" src="https://user-images.githubusercontent.com/41565823/50546053-7a7d5900-0c21-11e9-9ed0-88b4d08e6b82.png">
+</p>
+
