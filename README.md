@@ -1,5 +1,7 @@
 # ChocoBar
 
+[![](https://www.jitpack.io/v/Pradyuman7/ChocoBar.svg)](https://www.jitpack.io/#Pradyuman7/ChocoBar)
+
 <p align="center">
   <img width="250" height="250" src="https://user-images.githubusercontent.com/41565823/50545792-3f2c5b80-0c1c-11e9-81e6-23b0035c7b4c.gif">
 </p>
@@ -55,7 +57,17 @@ ChocoBar.builder().setActivity(MainActivity.this).setActionText("ACTION").setAct
 ```
 You can also create custom ChocoBars with tons of customizations like this:
 ``` java
-ChocoBar.builder().setBackgroundColor(Color.parseColor("#00bfff")).setTextSize(18).setTextColor(Color.parseColor("#FFFFFF")).setTextTypefaceStyle(Typeface.ITALIC).setText("This is a custom Chocobar").setMaxLines(4).centerText().setActionText("ChocoBar").setActionTextColor(Color.parseColor("#66FFFFFF")).setActionTextSize(20).setActionTextTypefaceStyle(Typeface.BOLD).setIcon(R.mipmap.ic_launcher).setActivity(MainActivity.this).setDuration(ChocoBar.LENGTH_INDEFINITE).build().show();
+ChocoBar.builder().setBackgroundColor(Color.parseColor("#00bfff")).setTextSize(18).setTextColor(Color.parseColor("#FFFFFF"))
+	.setTextTypefaceStyle(Typeface.ITALIC)
+	.setText("This is a custom Chocobar")
+	.setMaxLines(4).centerText()
+	.setActionText("ChocoBar")
+	.setActionTextColor(Color.parseColor("#66FFFFFF"))
+	.setActionTextSize(20)
+	.setActionTextTypefaceStyle(Typeface.BOLD)
+	.setIcon(R.mipmap.ic_launcher)
+	.setActivity(MainActivity.this)
+	.setDuration(ChocoBar.LENGTH_INDEFINITE).build().show();
             
 ```
 
