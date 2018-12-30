@@ -1,6 +1,7 @@
 # ChocoBar
 
 [![](https://www.jitpack.io/v/Pradyuman7/ChocoBar.svg)](https://www.jitpack.io/#Pradyuman7/ChocoBar)
+[ ![Download](https://api.bintray.com/packages/pradyuman7/ChocoBar/ChocoBar/images/download.svg) ](https://bintray.com/pradyuman7/ChocoBar/ChocoBar/_latestVersion)
 
 <p align="center">
   <img width="250" height="250" src="https://user-images.githubusercontent.com/41565823/50545792-3f2c5b80-0c1c-11e9-81e6-23b0035c7b4c.gif">
@@ -75,4 +76,11 @@ ChocoBar.builder().setBackgroundColor(Color.parseColor("#00bfff")).setTextSize(1
 	.setDuration(ChocoBar.LENGTH_INDEFINITE).build().show();
             
 ```
+## Pull Request
+
+Have some new ideas or find a bug? Do not hesitate to open an `issue` and make a `pull request`.
+
+## License
+
+**ChocoBar** is under an **MIT** license. See the [LICENSE](LICENSE.md) file for more info.
 
