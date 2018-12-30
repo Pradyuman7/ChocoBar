@@ -68,7 +68,6 @@ ChocoBar.builder().setBackgroundColor(Color.parseColor("#00bfff")).setTextSize(1
 </p>
 
 ![screenshot 2018-12-30 at 10 55 08 am](https://user-images.githubusercontent.com/41565823/50546114-a3eab480-0c22-11e9-9d36-f145ca3724a9.png)
-![screenshot 2018-12-30 at 10 54 54 am](https://user-images.githubusercontent.com/41565823/50546115-a3eab480-0c22-11e9-8d5d-063a18d8fb58.png)
 ![screenshot 2018-12-30 at 10 54 39 am](https://user-images.githubusercontent.com/41565823/50546116-a3eab480-0c22-11e9-89dc-6856f019bcf3.png)
 
 <p align="center">
