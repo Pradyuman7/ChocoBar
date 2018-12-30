@@ -37,7 +37,7 @@ dependencies {
 
 ## Usage
 
-Each method always returns a `Snackbar` object, so you can customize the Snackbar much more. **DON'T FORGET THE `show()` METHOD!**
+Each method always returns a `Snackbar` object, so you can customize the Snackbar and much more. Check out the following examples:
 
 To display a green ChocoBar:
 
