@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Snickers</string>
+    <string name="error_toast">error</string>
+    <string name="success_toast">success</string>
+    <string name="info_toast">info</string>
+    <string name="warning_toast">warning</string>
+    <string name="normal_toast_without_icon">simple</string>
+    <string name="info_toast_with_formatting">INFORMATION</string>
+    <string name="error_message">ERROE</string>
+    <string name="success_message">SUCCESS</string>
+    <string name="info_message">INFO</string>
+    <string name="warning_message">WARN</string>
+    <string name="normal_message_without_icon">SIMPLE</string>
+    <string name="simple_chocobar">Simple ChocoBar</string>
+    <string name="green_chocobar">Green ChocoBar</string>
+    <string name="orange_chocobar">Orange ChocoBar</string>
+    <string name="cyan_chocobar">Cyan ChocoBar</string>
+    <string name="red_chocobar">Red ChocoBar</string>
+    <string name="customized_chocobar">Customized ChocoBar</string>
+</resources>
