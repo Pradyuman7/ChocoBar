@@ -64,12 +64,15 @@ ChocoBar.builder().setView(v).setText("RED").setDuration(ChocoBar.LENGTH_INDEFIN
 To display a simple ChocoBar with a button:
 
 ``` java
-ChocoBar.builder().setActivity(MainActivity.this).setActionText("ACTION").setActionClickListener(new View.OnClickListener() {
-                            @Override
-                            public void onClick(View v) {
-                                Toast.makeText(MainActivity.this,"You clicked",Toast.LENGTH_LONG).show();
-                            }
-                        }).setText("This is a normal ChocoBar").setDuration(ChocoBar.LENGTH_INDEFINITE).build().show();
+ChocoBar.builder().setActivity(MainActivity.this).setActionText("ACTION")
+		.setActionClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                     Toast.makeText(MainActivity.this,"You clicked",Toast.LENGTH_LONG).show();
+                }
+                })
+		.setText("This is a normal ChocoBar")
+		.setDuration(ChocoBar.LENGTH_INDEFINITE).build().show();
 ```
 You can also create custom ChocoBars with tons of customizations like this:
 ``` java
