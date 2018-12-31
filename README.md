@@ -50,18 +50,18 @@ dependencies {
 
 Each method always returns a `Snackbar` object, so you can customize the Snackbar and much more. Check out the following examples:
 
-To display a green ChocoBar:
+- To display a green ChocoBar:
 
 ``` java
 ChocoBar.builder().setActivity(MainActivity.this).setText("GREEN").setDuration(ChocoBar.LENGTH_SHORT).green().show();
 ```
-To display a red ChocoBar:
+- To display a red ChocoBar:
 
 ``` java
 ChocoBar.builder().setView(v).setText("RED").setDuration(ChocoBar.LENGTH_INDEFINITE).setActionText(android.R.string.ok).red().show();
 ```            
             
-To display a simple ChocoBar with a button:
+- To display a simple ChocoBar with a button and some action on clicking the button.
 
 ``` java
 ChocoBar.builder().setActivity(MainActivity.this).setActionText("ACTION")
@@ -74,7 +74,7 @@ ChocoBar.builder().setActivity(MainActivity.this).setActionText("ACTION")
 		.setText("This is a normal ChocoBar")
 		.setDuration(ChocoBar.LENGTH_INDEFINITE).build().show();
 ```
-You can also create custom ChocoBars with tons of customizations like this:
+- You can also create custom ChocoBars with tons of customizations like this:
 ``` java
 ChocoBar.builder().setBackgroundColor(Color.parseColor("#00bfff")).setTextSize(18)
 	.setTextColor(Color.parseColor("#FFFFFF"))
