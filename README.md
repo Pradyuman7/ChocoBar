@@ -11,6 +11,16 @@
   The usual Snackbar with more 🍫 and colours :grin:. Inspired by <a href="https://github.com/TonnyL/Light"> Light</a>.
 </p>
 
+## Screenshots
+
+**Preview of Different kinds of ChocoBars available in this library**
+
+![screenshot 2018-12-31 at 4 26 25 am](https://user-images.githubusercontent.com/41565823/50554067-56b72300-0cb4-11e9-8b04-8f12b09820d9.png)
+![screenshot 2018-12-31 at 4 24 32 am](https://user-images.githubusercontent.com/41565823/50554071-574fb980-0cb4-11e9-9c0d-95f0df30f72c.png)
+![screenshot 2018-12-31 at 4 25 38 am](https://user-images.githubusercontent.com/41565823/50554069-574fb980-0cb4-11e9-95f5-df24d2a56a96.png)
+![screenshot 2018-12-31 at 4 25 09 am](https://user-images.githubusercontent.com/41565823/50554070-574fb980-0cb4-11e9-8a7d-0ab8b061e120.png)
+![screenshot 2018-12-31 at 4 26 00 am](https://user-images.githubusercontent.com/41565823/50554068-574fb980-0cb4-11e9-96f2-7802ad3a400f.png)
+
 
 ## Prerequisites
 
@@ -63,10 +73,12 @@ ChocoBar.builder().setActivity(MainActivity.this).setActionText("ACTION").setAct
 ```
 You can also create custom ChocoBars with tons of customizations like this:
 ``` java
-ChocoBar.builder().setBackgroundColor(Color.parseColor("#00bfff")).setTextSize(18).setTextColor(Color.parseColor("#FFFFFF"))
+ChocoBar.builder().setBackgroundColor(Color.parseColor("#00bfff")).setTextSize(18)
+	.setTextColor(Color.parseColor("#FFFFFF"))
 	.setTextTypefaceStyle(Typeface.ITALIC)
 	.setText("This is a custom Chocobar")
-	.setMaxLines(4).centerText()
+	.setMaxLines(4)
+	.centerText()
 	.setActionText("ChocoBar")
 	.setActionTextColor(Color.parseColor("#66FFFFFF"))
 	.setActionTextSize(20)
@@ -76,6 +88,7 @@ ChocoBar.builder().setBackgroundColor(Color.parseColor("#00bfff")).setTextSize(1
 	.setDuration(ChocoBar.LENGTH_INDEFINITE).build().show();
             
 ```
+
 ## Pull Request
 
 Have some new ideas or find a bug? Do not hesitate to open an `issue` and make a `pull request`.
