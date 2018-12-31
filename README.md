@@ -13,7 +13,7 @@
 
 ## Screenshots
 
-**Preview of Different kinds of ChocoBars available in this library**
+**Preview of Different kinds of ChocoBars you can use**
 
 ![screenshot 2018-12-31 at 4 26 25 am](https://user-images.githubusercontent.com/41565823/50554067-56b72300-0cb4-11e9-8b04-8f12b09820d9.png)
 ![screenshot 2018-12-31 at 4 24 32 am](https://user-images.githubusercontent.com/41565823/50554071-574fb980-0cb4-11e9-9c0d-95f0df30f72c.png)
