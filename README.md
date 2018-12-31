@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-  The usual Snackbar with more 🍫 and colours :grin:. Inspired by <a href="https://github.com/TonnyL/Light"> Light</a>.
+  The usual Snackbar with more 🍫 and colours :tada:. Inspired by <a href="https://github.com/TonnyL/Light"> Light</a>.
 </p>
 
 ## Screenshots
