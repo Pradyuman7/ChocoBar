@@ -91,7 +91,7 @@ ChocoBar.builder().setBackgroundColor(Color.parseColor("#00bfff")).setTextSize(1
 
 ## Pull Request
 
-Have some new ideas or find a bug? Do not hesitate to open an `issue` and make a `pull request`.
+Have some new ideas or found a bug? Do not hesitate to open an `issue` and make a `pull request`.
 
 ## License
 
