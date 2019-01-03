@@ -55,12 +55,20 @@ Each method always returns a `Snackbar` object, so you can customize the Snackba
 - To display a green ChocoBar:
 
 ``` java
-ChocoBar.builder().setActivity(MainActivity.this).setText("GREEN").setDuration(ChocoBar.LENGTH_SHORT).green().show();
+ChocoBar.builder().setActivity(MainActivity.this)
+		  .setText("GREEN")
+		  .setDuration(ChocoBar.LENGTH_SHORT)
+		  .green()
+		  .show();
 ```
 - To display a red ChocoBar:
 
 ``` java
-ChocoBar.builder().setView(v).setText("RED").setDuration(ChocoBar.LENGTH_INDEFINITE).setActionText(android.R.string.ok).red().show();
+ChocoBar.builder().setView(v).setText("RED")
+			     .setDuration(ChocoBar.LENGTH_INDEFINITE)
+			     .setActionText(android.R.string.ok)
+			     .red()
+			     .show();
 ```            
             
 - To display a simple ChocoBar with a button and some action on clicking the button.
