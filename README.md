@@ -83,7 +83,9 @@ ChocoBar.builder().setActivity(MainActivity.this).setActionText("ACTION")
                 	}
                 	})
 		.setText("This is a normal ChocoBar")
-		.setDuration(ChocoBar.LENGTH_INDEFINITE).build().show();
+		.setDuration(ChocoBar.LENGTH_INDEFINITE)
+		.build()
+		.show();
 ```
 - You can also create custom ChocoBars with tons of customizations like this:
 ``` java
@@ -99,7 +101,9 @@ ChocoBar.builder().setBackgroundColor(Color.parseColor("#00bfff")).setTextSize(1
 	.setActionTextTypefaceStyle(Typeface.BOLD)
 	.setIcon(R.mipmap.ic_launcher)
 	.setActivity(MainActivity.this)
-	.setDuration(ChocoBar.LENGTH_INDEFINITE).build().show();
+	.setDuration(ChocoBar.LENGTH_INDEFINITE)
+	.build()
+	.show();
             
 ```
 
