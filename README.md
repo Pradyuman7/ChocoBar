@@ -77,11 +77,11 @@ ChocoBar.builder().setView(v)
 ``` java
 ChocoBar.builder().setActivity(MainActivity.this).setActionText("ACTION")
 		.setActionClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                     Toast.makeText(MainActivity.this,"You clicked",Toast.LENGTH_LONG).show();
-                }
-                })
+                	@Override
+                	public void onClick(View v) {
+                     		Toast.makeText(MainActivity.this,"You clicked",Toast.LENGTH_LONG).show();
+                	}
+                	})
 		.setText("This is a normal ChocoBar")
 		.setDuration(ChocoBar.LENGTH_INDEFINITE).build().show();
 ```
