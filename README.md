@@ -64,11 +64,12 @@ ChocoBar.builder().setActivity(MainActivity.this)
 - To display a red ChocoBar:
 
 ``` java
-ChocoBar.builder().setView(v).setText("RED")
-			     .setDuration(ChocoBar.LENGTH_INDEFINITE)
-			     .setActionText(android.R.string.ok)
-			     .red()
-			     .show();
+ChocoBar.builder().setView(v)
+		  .setText("RED")
+	 	  .setDuration(ChocoBar.LENGTH_INDEFINITE)
+		  .setActionText(android.R.string.ok)
+		  .red()
+		  .show();
 ```            
             
 - To display a simple ChocoBar with a button and some action on clicking the button.
