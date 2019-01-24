@@ -118,5 +118,5 @@ Have some new ideas or found a bug? Do not hesitate to open an `issue` and make 
 
 ## License
 
-**ChocoBar** is under an **MIT** license. See the [LICENSE](LICENSE.md) file for more info.
+**ChocoBar** is under [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT). See the [LICENSE](LICENSE.md) file for more info.
 
