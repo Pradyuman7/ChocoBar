@@ -13,9 +13,9 @@
   The usual Snackbar with more 🍫 and colours :tada:. Inspired by <a href="https://github.com/TonnyL/Light"> Light</a>.
 </p>
 
-## Medium Post
+## AndroidPub Post
 
-[You can read the medium post about this library, the reason of it's existence, the perks it provides and other details, here.](https://medium.com/@pradyumandixit/drop-the-toast-and-snackbar-to-replace-it-by-chocobar-ada7692fa915)
+[You can read the AndroidPub post about this library, the reason of it's existence, the perks it provides and other details, here.](https://medium.com/@pradyumandixit/drop-the-toast-and-snackbar-to-replace-it-by-chocobar-ada7692fa915)
 
 ## Screenshots
 
