@@ -94,21 +94,21 @@ ChocoBar.builder().setActivity(MainActivity.this).setActionText("ACTION")
 - You can also create custom ChocoBars with tons of customizations like this:
 ``` java
 ChocoBar.builder().setBackgroundColor(Color.parseColor("#00bfff"))
-	.setTextSize(18)
-	.setTextColor(Color.parseColor("#FFFFFF"))
-	.setTextTypefaceStyle(Typeface.ITALIC)
-	.setText("This is a custom Chocobar")
-	.setMaxLines(4)
-	.centerText()
-	.setActionText("ChocoBar")
-	.setActionTextColor(Color.parseColor("#66FFFFFF"))
-	.setActionTextSize(20)
-	.setActionTextTypefaceStyle(Typeface.BOLD)
-	.setIcon(R.mipmap.ic_launcher)
-	.setActivity(MainActivity.this)
-	.setDuration(ChocoBar.LENGTH_INDEFINITE)
-	.build()
-	.show();
+		  .setTextSize(18)
+		  .setTextColor(Color.parseColor("#FFFFFF"))
+		  .setTextTypefaceStyle(Typeface.ITALIC)
+	          .setText("This is a custom Chocobar")
+		  .setMaxLines(4)
+		  .centerText()
+		  .setActionText("ChocoBar")
+		  .setActionTextColor(Color.parseColor("#66FFFFFF"))
+	  	  .setActionTextSize(20)
+		  .setActionTextTypefaceStyle(Typeface.BOLD)
+		  .setIcon(R.mipmap.ic_launcher)
+		  .setActivity(MainActivity.this)
+		  .setDuration(ChocoBar.LENGTH_INDEFINITE)
+		  .build()
+	  	  .show();
             
 ```
 
