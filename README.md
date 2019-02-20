@@ -1,6 +1,7 @@
 # ChocoBar
 
 [![](https://www.jitpack.io/v/Pradyuman7/ChocoBar.svg)](https://www.jitpack.io/#Pradyuman7/ChocoBar)
+[![ChocoBar](https://img.shields.io/badge/Pradyuman7-ChocoBar-red.svg?style=plastic)](https://github.com/Pradyuman7/ChocoBar)
 [ ![Download](https://api.bintray.com/packages/pradyuman7/ChocoBar/ChocoBar/images/download.svg) ](https://bintray.com/pradyuman7/ChocoBar/ChocoBar/_latestVersion)
 [![API](https://img.shields.io/badge/API-15%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=14)
 [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-ChocoBar-brightgreen.svg?style=flat)](https://android-arsenal.com/details/1/7415)
