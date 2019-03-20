@@ -18,7 +18,7 @@
 ## GIF
 
 <p align="left">
-  <img width="300" height="550" src="https://user-images.githubusercontent.com/41565823/52993954-3edb6000-3416-11e9-94ef-bf9578abfe7f.gif">
+  <img width="300" height="550" src="https://user-images.githubusercontent.com/41565823/54661529-e2ce2f00-4ada-11e9-9e66-3c0aecfa35b6.gif">
 </p>
 
 ## AndroidPub Post
