@@ -3,6 +3,7 @@ package com.pd.chocobar;
 import android.app.Activity;
 import android.content.Context;
 import android.content.res.ColorStateList;
+import android.content.res.Configuration;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
@@ -178,7 +179,11 @@ public class ChocoBar {
                         builder.icon.getIntrinsicHeight());
             }
 
-            text.setCompoundDrawablesWithIntrinsicBounds(builder.icon, null, transparentHelperDrawable, null);
+            Configuration configuration = chocolateLayout.getResources().getConfiguration();
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1 && configuration.getLayoutDirection() == View.LAYOUT_DIRECTION_RTL)
+                text.setCompoundDrawablesWithIntrinsicBounds(transparentHelperDrawable, null, builder.icon, null);
+            else
+                text.setCompoundDrawablesWithIntrinsicBounds(builder.icon, null, transparentHelperDrawable, null);
             text.setCompoundDrawablePadding(text.getResources().getDimensionPixelOffset(R.dimen.icon_padding));
         }
 
