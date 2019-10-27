@@ -43,15 +43,15 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.button_info).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ChocoBar.builder().setView(v).setText("CYAN").centerText().setDuration(ChocoBar.LENGTH_LONG).cyan().show();
+                Snackbar warningSnackBar = ChocoBar.builder().setActivity(MainActivity.this).setText("ORANGE").setDuration(ChocoBar.LENGTH_LONG).orange();
+                warningSnackBar.show();
             }
         });
 
         findViewById(R.id.button_warning).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Snackbar warningSnackBar = ChocoBar.builder().setActivity(MainActivity.this).setText("ORANGE").setDuration(ChocoBar.LENGTH_LONG).orange();
-                warningSnackBar.show();
+                ChocoBar.builder().setView(v).setText("CYAN").centerText().setDuration(ChocoBar.LENGTH_LONG).cyan().show();
             }
         });
 
