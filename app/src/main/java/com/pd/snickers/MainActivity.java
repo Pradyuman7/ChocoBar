@@ -9,9 +9,7 @@ import android.view.View;
 import android.widget.Toast;
 
 
-
 import com.pd.chocobar.ChocoBar;
-
 
 
 public class MainActivity extends AppCompatActivity {
@@ -24,12 +22,12 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.button_default).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               ChocoBar.builder().setActivity(MainActivity.this).setActionText("ACTION").setActionClickListener(new View.OnClickListener() {
-                            @Override
-                            public void onClick(View v) {
-                                Toast.makeText(MainActivity.this,"You clicked",Toast.LENGTH_LONG).show();
-                            }
-                        }).setText("This is a normal ChocoBar").setDuration(ChocoBar.LENGTH_INDEFINITE).build().show();
+                ChocoBar.builder().setActivity(MainActivity.this).setActionText("ACTION").setActionClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Toast.makeText(MainActivity.this, "You clicked", Toast.LENGTH_LONG).show();
+                    }
+                }).setText("This is a normal ChocoBar").setDuration(ChocoBar.LENGTH_INDEFINITE).build().show();
             }
         });
 
@@ -62,12 +60,27 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        findViewById(R.id.button_good).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ChocoBar.builder().setView(v).setText("GRAY_GOOD").centerText().setDuration(ChocoBar.LENGTH_LONG).good().show();
+            }
+        });
+
+        findViewById(R.id.button_bad).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ChocoBar.builder().setView(v).setText("GRAY_BAD").centerText().setDuration(ChocoBar.LENGTH_LONG).bad().show();
+            }
+        });
+
         findViewById(R.id.button_custom).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 ChocoBar.builder().setBackgroundColor(Color.parseColor("#00bfff")).setTextSize(18).setTextColor(Color.parseColor("#FFFFFF")).setTextTypefaceStyle(Typeface.ITALIC).setText("This is a custom Chocobar").setMaxLines(4).centerText().setActionText("ChocoBar").setActionTextColor(Color.parseColor("#66FFFFFF")).setActionTextSize(20).setActionTextTypefaceStyle(Typeface.BOLD).setIcon(R.mipmap.ic_launcher).setActivity(MainActivity.this).setDuration(ChocoBar.LENGTH_INDEFINITE).build().show();
             }
         });
+
 
     }
 

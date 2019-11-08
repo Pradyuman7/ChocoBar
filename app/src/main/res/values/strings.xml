@@ -17,4 +17,6 @@
     <string name="cyan_chocobar">Cyan ChocoBar</string>
     <string name="red_chocobar">Red ChocoBar</string>
     <string name="customized_chocobar">Customized ChocoBar</string>
+    <string name="gray_good_chocobar">GRAY GOOD CHOCOBAR</string>
+    <string name="gray_bad_chocobar">GRAY BAD CHOCOBAR</string>
 </resources>

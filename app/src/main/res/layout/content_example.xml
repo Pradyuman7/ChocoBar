@@ -108,16 +108,58 @@
         android:layout_width="match_parent"/>
 
     <Button
+        android:text="@string/gray_good_chocobar"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_error"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/button_good"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        app:layout_constraintTop_toBottomOf="@+id/button_error"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/button_custom"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_width="match_parent"/>
+
+    <Button
+        android:text="@string/gray_bad_chocobar"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_good"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/button_bad"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        app:layout_constraintTop_toBottomOf="@+id/button_good"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/button_custom"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_width="match_parent"/>
+
+    <Button
         android:text="@string/customized_chocobar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/button_error"
+        android:layout_below="@+id/button_bad"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:id="@+id/button_custom"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        app:layout_constraintTop_toBottomOf="@+id/button_error"
+        app:layout_constraintTop_toBottomOf="@+id/button_bad"
         android:layout_marginLeft="8dp"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginRight="8dp"
