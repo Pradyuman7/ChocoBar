@@ -34,6 +34,8 @@
 ![screenshot 2018-12-31 at 4 25 38 am](https://user-images.githubusercontent.com/41565823/50554069-574fb980-0cb4-11e9-95f5-df24d2a56a96.png)
 ![screenshot 2018-12-31 at 4 25 09 am](https://user-images.githubusercontent.com/41565823/50554070-574fb980-0cb4-11e9-8a7d-0ab8b061e120.png)
 ![screenshot 2018-12-31 at 4 26 00 am](https://user-images.githubusercontent.com/41565823/50554068-574fb980-0cb4-11e9-96f2-7802ad3a400f.png)
+![screenshot 2018-12-31 at 4 26 00 am](https://user-images.githubusercontent.com/37071007/68586351-d6fb0700-04c7-11ea-8133-dd0e14fcd8c8.png)
+![screenshot 2018-12-31 at 4 26 00 am](https://user-images.githubusercontent.com/37071007/68586380-e5e1b980-04c7-11ea-95eb-612167d59448.png)
 
 
 ## Prerequisites
@@ -83,7 +85,7 @@ ChocoBar.builder().setView(v)
 		  .red()   // in built red ChocoBar
 		  .show();
 ```            
-            
+          
 - To display a simple ChocoBar with a button and some action on clicking the button.
 
 ``` java
@@ -99,6 +101,7 @@ ChocoBar.builder().setActivity(MainActivity.this).setActionText("ACTION")
 		.build()
 		.show();
 ```
+      
 - You can also create custom ChocoBars with tons of customizations like this:
 ``` java
 ChocoBar.builder().setBackgroundColor(Color.parseColor("#00bfff"))
