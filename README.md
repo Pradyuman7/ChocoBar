@@ -84,7 +84,24 @@ ChocoBar.builder().setView(v)
 		  .setActionText(android.R.string.ok)
 		  .red()   // in built red ChocoBar
 		  .show();
-```            
+```     
+- To display a gray ChocoBar:
+
+``` java
+ChocoBar.builder().setView(v)
+                  .setText("GRAY_GOOD")
+		  .centerText()
+		  .setDuration(ChocoBar.LENGTH_LONG)
+		  .good()
+		  .show();
+		  
+ChocoBar.builder().setView(v)
+	          .setText("GRAY_BAD")
+		  .centerText()
+		  .setDuration(ChocoBar.LENGTH_LONG)
+		  .bad()
+		  .show();
+```  
           
 - To display a simple ChocoBar with a button and some action on clicking the button.
 
