@@ -32,7 +32,7 @@ import static android.support.annotation.RestrictTo.Scope.LIBRARY_GROUP;
 public class ChocoBar {
 
     private enum Type {
-        DEFAULT(null, null, null), GREEN(Color.parseColor("#388E3C"), R.drawable.check_mark, Color.WHITE), RED(Color.parseColor("#D50000"), R.drawable.cross_mark, Color.WHITE), CYAN(Color.parseColor("#e0ffff"), R.drawable.info_mark, Color.WHITE), ORANGE(Color.parseColor("#ffa500"), R.drawable.warning_mark, Color.BLACK);
+        DEFAULT(null, null, null), GREEN(Color.parseColor("#388E3C"), R.drawable.check_mark, Color.WHITE), RED(Color.parseColor("#D50000"), R.drawable.cross_mark, Color.WHITE), CYAN(Color.parseColor("#e0ffff"), R.drawable.info_mark, Color.WHITE), ORANGE(Color.parseColor("#ffa500"), R.drawable.warning_mark, Color.BLACK), GOOD(Color.parseColor("#C5BEBE"), R.drawable.good_mark, Color.WHITE), BAD(Color.parseColor("#C5BEBE"), R.drawable.bad_mark, Color.WHITE);
 
         private Integer color;
         private Integer iconResId;
@@ -393,6 +393,16 @@ public class ChocoBar {
         public Snackbar red() {
             type = Type.RED;
             return make();
+        }
+
+        public Snackbar good(){
+            type = Type.GOOD;
+            return  make();
+        }
+
+        public Snackbar bad(){
+            type = Type.BAD;
+            return  make();
         }
 
         private Snackbar make() {
