@@ -1,4 +1,4 @@
-# ChocoBar (version 1.2 is live)
+# ChocoBar
 
 [![](https://www.jitpack.io/v/Pradyuman7/ChocoBar.svg)](https://www.jitpack.io/#Pradyuman7/ChocoBar)
 [![ChocoBar](https://img.shields.io/badge/Pradyuman7-ChocoBar-darkred.svg?style=flat)](https://github.com/Pradyuman7/ChocoBar)
@@ -24,6 +24,17 @@
 ## AndroidPub Post
 
 [You can read the AndroidPub post about this library, the reason of it's existence, the perks it provides and other details, here.](https://medium.com/@pradyumandixit/drop-the-toast-and-snackbar-to-replace-it-by-chocobar-ada7692fa915)
+
+## Versions
+
+### Version 1.0
+First release of ChocoBar
+
+### Version 1.1
+Minor bug fixes and performance improvement
+
+### Version 1.2
+New good gray and bad gray ChocoBar additions
 
 ## Screenshots
 
