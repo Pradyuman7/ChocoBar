@@ -34,7 +34,7 @@ First release of ChocoBar
 Minor bug fixes and performance improvement
 
 ### Version 1.2
-New good gray and bad gray ChocoBar additions
+New good gray and bad gray ChocoBar additions and rtl languages support
 
 ## Screenshots
 
