@@ -1,4 +1,4 @@
-# ChocoBar
+# ChocoBar (version 1.2 is live)
 
 [![](https://www.jitpack.io/v/Pradyuman7/ChocoBar.svg)](https://www.jitpack.io/#Pradyuman7/ChocoBar)
 [![ChocoBar](https://img.shields.io/badge/Pradyuman7-ChocoBar-darkred.svg?style=flat)](https://github.com/Pradyuman7/ChocoBar)
