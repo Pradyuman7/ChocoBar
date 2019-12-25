@@ -74,12 +74,20 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        findViewById(R.id.button_off_notification).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ChocoBar.builder().setView(v).setText("Black").centerText().setDuration(ChocoBar.LENGTH_LONG).black().show();
+            }
+        });
+
         findViewById(R.id.button_custom).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 ChocoBar.builder().setBackgroundColor(Color.parseColor("#00bfff")).setTextSize(18).setTextColor(Color.parseColor("#FFFFFF")).setTextTypefaceStyle(Typeface.ITALIC).setText("This is a custom Chocobar").setMaxLines(4).centerText().setActionText("ChocoBar").setActionTextColor(Color.parseColor("#66FFFFFF")).setActionTextSize(20).setActionTextTypefaceStyle(Typeface.BOLD).setIcon(R.mipmap.ic_launcher).setActivity(MainActivity.this).setDuration(ChocoBar.LENGTH_INDEFINITE).build().show();
             }
         });
+
 
 
     }
