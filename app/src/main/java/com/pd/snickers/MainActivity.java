@@ -81,6 +81,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        findViewById(R.id.button_love).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ChocoBar.builder().setView(v).setText("Love").centerText().setDuration(ChocoBar.LENGTH_LONG).love().show();
+            }
+        });
+
         findViewById(R.id.button_custom).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
