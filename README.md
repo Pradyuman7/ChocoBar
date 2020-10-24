@@ -27,13 +27,13 @@
 
 ## Versions
 
-| Version name  | Tag        | What's new                                                                |
-|:-------------:|:----------:|:------------------------------------------------------------------------- |
-| Version 1.0   | V1.0       | First release of ChocoBar                                                 |
-| Version 1.1   | V1.1       | Minor bug fixes and performance improvements                              |
-| Version 1.2   | V1.2       | New good gray and bad gray ChocoBar additions and RTL languages support   |
-| Version 1.3   | V1.3       | New addition of Black ChocoBar and minor bug fixes                        |
-
+| Version name  | Tag        | What's new                                                                                  |
+|:-------------:|:----------:|:--------------------------------------------------------------------------------------------|
+| Version 1.0   | V1.0       | First release of ChocoBar                                                                   |
+| Version 1.1   | V1.1       | Minor bug fixes and performance improvements                                                |
+| Version 1.2   | V1.2       | New good gray and bad gray ChocoBar additions and RTL languages support                     |
+| Version 1.3   | V1.3       | New addition of Black ChocoBar and minor bug fixes                                          |
+| Version 1.4   | V1.4       | New addition of Love ChocoBar, bug fixes and addition of github actions for master branch   |
 
 ## Screenshots
 
