@@ -33,7 +33,15 @@ public class ChocoBar {
 
     private enum Type {
 
-    DEFAULT(null, null, null), GREEN(Color.parseColor("#388E3C"), R.drawable.check_mark, Color.WHITE), RED(Color.parseColor("#D50000"), R.drawable.cross_mark, Color.WHITE), CYAN(Color.parseColor("#e0ffff"), R.drawable.info_mark, Color.WHITE), ORANGE(Color.parseColor("#ffa500"), R.drawable.warning_mark, Color.BLACK), GOOD(Color.parseColor("#C5BEBE"), R.drawable.good_mark, Color.WHITE), BAD(Color.parseColor("#C5BEBE"), R.drawable.bad_mark, Color.WHITE), BLACK(Color.parseColor("#000000"), R.drawable.off_notification_mark, Color.WHITE);
+        DEFAULT(null, null, null),
+        GREEN(Color.parseColor("#388E3C"), R.drawable.check_mark, Color.WHITE),
+        RED(Color.parseColor("#D50000"), R.drawable.cross_mark, Color.WHITE),
+        CYAN(Color.parseColor("#e0ffff"), R.drawable.info_mark, Color.WHITE),
+        ORANGE(Color.parseColor("#ffa500"), R.drawable.warning_mark, Color.BLACK),
+        GOOD(Color.parseColor("#C5BEBE"), R.drawable.good_mark, Color.WHITE),
+        BAD(Color.parseColor("#C5BEBE"), R.drawable.bad_mark, Color.WHITE),
+        BLACK(Color.parseColor("#000000"), R.drawable.off_notification_mark, Color.WHITE),
+        LOVE(Color.parseColor("#E8290B"), R.drawable.ic_love, Color.BLACK);
 
         private Integer color;
         private Integer iconResId;
@@ -41,7 +49,7 @@ public class ChocoBar {
 
         Type(@ColorInt Integer color, @DrawableRes Integer iconResId, @ColorInt Integer standardTextColor) {
             this.color = color;
-            
+
             this.iconResId = iconResId;
             this.standardTextColor = standardTextColor;
         }
@@ -79,12 +87,13 @@ public class ChocoBar {
         Snackbar chocolate = Snackbar.make(builder.view, builder.text, builder.duration);
 
         if (builder.actionClickListener != null || builder.actionText != null) {
-            if (builder.actionClickListener == null) builder.actionClickListener = new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
+            if (builder.actionClickListener == null)
+                builder.actionClickListener = new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
 
-                }
-            };
+                    }
+                };
 
             chocolate.setAction(builder.actionText, builder.actionClickListener);
 
@@ -151,7 +160,6 @@ public class ChocoBar {
             text.setTypeface(textTypeface);
 
 
-
         if (builder.textColor == null)
             builder.textColor = builder.type.getStandardTextColor();
 
@@ -204,8 +212,8 @@ public class ChocoBar {
     }
 
     public static final int LENGTH_INDEFINITE = Snackbar.LENGTH_INDEFINITE;
-    public static final int LENGTH_SHORT      = Snackbar.LENGTH_SHORT;
-    public static final int LENGTH_LONG       = Snackbar.LENGTH_LONG;
+    public static final int LENGTH_SHORT = Snackbar.LENGTH_SHORT;
+    public static final int LENGTH_LONG = Snackbar.LENGTH_LONG;
 
 
     public static class Builder {
@@ -396,15 +404,21 @@ public class ChocoBar {
             return make();
         }
 
-        public Snackbar good(){
+        public Snackbar good() {
             type = Type.GOOD;
-            return  make();
+            return make();
         }
 
-        public Snackbar bad(){
+        public Snackbar bad() {
             type = Type.BAD;
-            return  make();
+            return make();
         }
+
+        public Snackbar love() {
+            type = Type.LOVE;
+            return make();
+        }
+
 
         public Snackbar black() {
             type = Type.BLACK;
