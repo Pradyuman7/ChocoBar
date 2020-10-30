@@ -34,14 +34,14 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.button_success).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ChocoBar.builder().setActivity(MainActivity.this).setText("GREEN").setDuration(ChocoBar.LENGTH_SHORT).green().show();
+                ChocoBar.builder().setActivity(MainActivity.this).setDuration(ChocoBar.LENGTH_SHORT).green().show();
             }
         });
 
         findViewById(R.id.button_info).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Snackbar warningSnackBar = ChocoBar.builder().setActivity(MainActivity.this).setText("ORANGE").setDuration(ChocoBar.LENGTH_LONG).orange();
+                Snackbar warningSnackBar = ChocoBar.builder().setActivity(MainActivity.this).setDuration(ChocoBar.LENGTH_LONG).orange();
                 warningSnackBar.show();
             }
         });
@@ -49,42 +49,42 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.button_warning).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ChocoBar.builder().setView(v).setText("CYAN").centerText().setDuration(ChocoBar.LENGTH_LONG).cyan().show();
+                ChocoBar.builder().setView(v).centerText().setDuration(ChocoBar.LENGTH_LONG).cyan().show();
             }
         });
 
         findViewById(R.id.button_error).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ChocoBar.builder().setView(v).setText("RED").setDuration(ChocoBar.LENGTH_INDEFINITE).setActionText(android.R.string.ok).red().show();
+                ChocoBar.builder().setView(v).setDuration(ChocoBar.LENGTH_INDEFINITE).setActionText(android.R.string.ok).red().show();
             }
         });
 
         findViewById(R.id.button_good).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ChocoBar.builder().setView(v).setText("GRAY_GOOD").centerText().setDuration(ChocoBar.LENGTH_LONG).good().show();
+                ChocoBar.builder().setView(v).centerText().setDuration(ChocoBar.LENGTH_LONG).good().show();
             }
         });
 
         findViewById(R.id.button_bad).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ChocoBar.builder().setView(v).setText("GRAY_BAD").centerText().setDuration(ChocoBar.LENGTH_LONG).bad().show();
+                ChocoBar.builder().setView(v).centerText().setDuration(ChocoBar.LENGTH_LONG).bad().show();
             }
         });
 
         findViewById(R.id.button_off_notification).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ChocoBar.builder().setView(v).setText("Black").centerText().setDuration(ChocoBar.LENGTH_LONG).black().show();
+                ChocoBar.builder().setView(v).centerText().setDuration(ChocoBar.LENGTH_LONG).black().show();
             }
         });
 
         findViewById(R.id.button_love).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ChocoBar.builder().setView(v).setText("Love").centerText().setDuration(ChocoBar.LENGTH_LONG).love().show();
+                ChocoBar.builder().setView(v).centerText().setDuration(ChocoBar.LENGTH_LONG).love().show();
             }
         });
 
