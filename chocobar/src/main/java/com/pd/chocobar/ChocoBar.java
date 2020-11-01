@@ -33,25 +33,28 @@ public class ChocoBar {
 
     private enum Type {
 
-        DEFAULT(null, null, null),
-        GREEN(Color.parseColor("#388E3C"), R.drawable.check_mark, Color.WHITE),
-        RED(Color.parseColor("#D50000"), R.drawable.cross_mark, Color.WHITE),
-        CYAN(Color.parseColor("#e0ffff"), R.drawable.info_mark, Color.WHITE),
-        ORANGE(Color.parseColor("#ffa500"), R.drawable.warning_mark, Color.BLACK),
-        GOOD(Color.parseColor("#C5BEBE"), R.drawable.good_mark, Color.WHITE),
-        BAD(Color.parseColor("#C5BEBE"), R.drawable.bad_mark, Color.WHITE),
-        BLACK(Color.parseColor("#000000"), R.drawable.off_notification_mark, Color.WHITE),
-        LOVE(Color.parseColor("#E8290B"), R.drawable.ic_love, Color.BLACK);
+        DEFAULT(null, null, null, null),
+        GREEN(Color.parseColor("#388E3C"), R.drawable.check_mark, Color.WHITE, "SUCCESS !"),
+        RED(Color.parseColor("#D50000"), R.drawable.cross_mark, Color.WHITE, "ERROR !"),
+        CYAN(Color.parseColor("#e0ffff"), R.drawable.info_mark, Color.WHITE, "CYAN"),
+        ORANGE(Color.parseColor("#ffa500"), R.drawable.warning_mark, Color.BLACK, "WARNING !"),
+        GOOD(Color.parseColor("#C5BEBE"), R.drawable.good_mark, Color.WHITE, "GRAY_GOOD"),
+        BAD(Color.parseColor("#C5BEBE"), R.drawable.bad_mark, Color.WHITE, "GRAY_BAD"),
+        BLACK(Color.parseColor("#000000"), R.drawable.off_notification_mark, Color.WHITE, "Black"),
+        LOVE(Color.parseColor("#E8290B"), R.drawable.ic_love, Color.BLACK, "LOVE");
 
         private Integer color;
         private Integer iconResId;
         private Integer standardTextColor;
+        private CharSequence text;
 
-        Type(@ColorInt Integer color, @DrawableRes Integer iconResId, @ColorInt Integer standardTextColor) {
+        Type(@ColorInt Integer color, @DrawableRes Integer iconResId, @ColorInt Integer standardTextColor, CharSequence text) {
             this.color = color;
 
             this.iconResId = iconResId;
             this.standardTextColor = standardTextColor;
+
+            this.text = text;
         }
 
         public Integer getColor() {
@@ -74,6 +77,10 @@ public class ChocoBar {
         public Integer getStandardTextColor() {
             return standardTextColor;
         }
+
+        public CharSequence getText() {
+            return text;
+        }
     }
 
     private final Builder builder;
@@ -83,6 +90,10 @@ public class ChocoBar {
     }
 
     private Snackbar make() {
+
+        if(builder.text == null) {
+            builder.text = builder.type.getText();
+        }
 
         Snackbar chocolate = Snackbar.make(builder.view, builder.text, builder.duration);
 
@@ -221,7 +232,7 @@ public class ChocoBar {
         private View view = null;
         private Type type = Type.DEFAULT;
         private int duration = Snackbar.LENGTH_SHORT;
-        private CharSequence text = "";
+        private CharSequence text = null;
         private int textResId = 0;
         private Integer textColor = null;
         private ColorStateList textColors = null;
