@@ -34,6 +34,7 @@
 | Version 1.2   | V1.2       | New good gray and bad gray ChocoBar additions and RTL languages support                     |
 | Version 1.3   | V1.3       | New addition of Black ChocoBar and minor bug fixes                                          |
 | Version 1.4   | V1.4       | New addition of Love ChocoBar, bug fixes and addition of github actions for master branch   |
+| Version 1.5   | V1.5       | Update of in built Chocobars to have default text (editable)                                |
 
 ## Screenshots
 
