@@ -61,20 +61,22 @@ Add this in your root `build.gradle` file (**not** your module `build.gradle` fi
 
 ```gradle
 allprojects {
-		repositories {
-			...
-			maven { url 'https://www.jitpack.io' }
+	repositories {
+		...
+		maven { 
+			url 'https://www.jitpack.io' 
 		}
 	}
+}
 ```
 
 ## Dependency
 
-Add this to your module's `build.gradle` file (make sure the version matches the JitPack badge above):
+Add this to your module's `build.gradle` file (make sure the version matches the JitPack badge above for the latest stable version):
 
 ```gradle
 dependencies {
-	        implementation 'com.github.Pradyuman7:ChocoBar:V1.0'
+	implementation 'com.github.Pradyuman7:ChocoBar:V1.0'
 }
 ```
 
