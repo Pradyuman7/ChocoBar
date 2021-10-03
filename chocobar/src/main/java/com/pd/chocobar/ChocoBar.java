@@ -41,7 +41,8 @@ public class ChocoBar {
         GOOD(Color.parseColor("#C5BEBE"), R.drawable.good_mark, Color.WHITE, "GRAY_GOOD"),
         BAD(Color.parseColor("#C5BEBE"), R.drawable.bad_mark, Color.WHITE, "GRAY_BAD"),
         BLACK(Color.parseColor("#000000"), R.drawable.off_notification_mark, Color.WHITE, "Black"),
-        LOVE(Color.parseColor("#E8290B"), R.drawable.ic_love, Color.BLACK, "LOVE");
+        LOVE(Color.parseColor("#E8290B"), R.drawable.ic_love, Color.BLACK, "LOVE"),
+        BLOCKED(Color.parseColor("#E8290B"), R.drawable.blocked_mark, Color.BLACK, "BLOCKED");
 
         private Integer color;
         private Integer iconResId;
@@ -433,6 +434,11 @@ public class ChocoBar {
 
         public Snackbar black() {
             type = Type.BLACK;
+            return make();
+        }
+
+        public Snackbar blocked() {
+            type = Type.BLOCKED;
             return make();
         }
 

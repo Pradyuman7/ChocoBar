@@ -95,7 +95,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
+        findViewById(R.id.button_blocked).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ChocoBar.builder().setView(v).centerText().setDuration(ChocoBar.LENGTH_LONG).blocked().show();
+            }
+        });
 
     }
 
