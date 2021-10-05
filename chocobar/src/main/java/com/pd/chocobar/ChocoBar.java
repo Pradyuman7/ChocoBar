@@ -41,7 +41,8 @@ public class ChocoBar {
         GOOD(Color.parseColor("#C5BEBE"), R.drawable.good_mark, Color.WHITE, "GRAY_GOOD"),
         BAD(Color.parseColor("#C5BEBE"), R.drawable.bad_mark, Color.WHITE, "GRAY_BAD"),
         BLACK(Color.parseColor("#000000"), R.drawable.off_notification_mark, Color.WHITE, "Black"),
-        LOVE(Color.parseColor("#E8290B"), R.drawable.ic_love, Color.BLACK, "LOVE");
+        LOVE(Color.parseColor("#E8290B"), R.drawable.ic_love, Color.BLACK, "LOVE"),
+        NOTIFICATION_ON(Color.parseColor("#000000"), R.drawable.on_notification_mark, Color.WHITE, "NOTIFICATIONS ON");
 
         private Integer color;
         private Integer iconResId;
@@ -102,7 +103,6 @@ public class ChocoBar {
                 builder.actionClickListener = new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-
                     }
                 };
 
@@ -169,7 +169,6 @@ public class ChocoBar {
 
         else
             text.setTypeface(textTypeface);
-
 
         if (builder.textColor == null)
             builder.textColor = builder.type.getStandardTextColor();
@@ -433,6 +432,12 @@ public class ChocoBar {
 
         public Snackbar black() {
             type = Type.BLACK;
+            return make();
+        }
+
+        public Snackbar notificationsOn()
+        {
+            type = Type.NOTIFICATION_ON;
             return make();
         }
 

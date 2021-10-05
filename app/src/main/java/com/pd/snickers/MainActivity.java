@@ -74,13 +74,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        findViewById(R.id.button_off_notification).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                ChocoBar.builder().setView(v).centerText().setDuration(ChocoBar.LENGTH_LONG).black().show();
-            }
-        });
-
         findViewById(R.id.button_love).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -95,8 +88,22 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        findViewById(R.id.button_off_notification).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ChocoBar.builder().setView(v).centerText().setDuration(ChocoBar.LENGTH_LONG).black().show();
+            }
+        });
 
-
+        findViewById(R.id.button_on_notification).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ChocoBar.builder()
+                        .setView(v)
+                        .centerText()
+                        .setDuration(ChocoBar.LENGTH_LONG)
+                        .notificationsOn().show();
+            }
+        });
     }
-
 }
