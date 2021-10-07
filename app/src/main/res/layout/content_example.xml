@@ -150,28 +150,9 @@
         android:layout_width="match_parent"/>
 
     <Button
-        android:text="@string/black_chocobar"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/button_bad"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:id="@+id/button_off_notification"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        app:layout_constraintTop_toBottomOf="@+id/button_bad"
-        android:layout_marginLeft="8dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginRight="8dp"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/button_custom"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        app:layout_constraintHorizontal_bias="0.0"
-        android:layout_width="match_parent"/>
-
-    <Button
         android:text="@string/love_chocobar"
         android:layout_height="wrap_content"
+        android:layout_width="match_parent"
         android:layout_below="@+id/button_bad"
         android:id="@+id/button_love"
         app:layout_constraintTop_toBottomOf="@+id/button_custom"
@@ -183,16 +164,52 @@
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         app:layout_constraintHorizontal_bias="0.0"
-        android:layout_width="match_parent"/>
+        />
 
     <Button
         android:text="@string/customized_chocobar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/button_off_notification"
+        android:layout_below="@+id/button_love"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:id="@+id/button_custom"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        app:layout_constraintTop_toBottomOf="@+id/button_love"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/button_on_notification"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:text="@string/black_chocobar"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/button_custom"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/button_off_notification"
+            app:layout_constraintTop_toBottomOf="@+id/button_custom"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/button_on_notification"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintHorizontal_bias="0.0" />
+
+    <Button
+        android:text="@string/notifications_on"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_off_notification"
+        android:id="@+id/button_on_notification"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         app:layout_constraintTop_toBottomOf="@+id/button_off_notification"
