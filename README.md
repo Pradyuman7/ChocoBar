@@ -50,10 +50,6 @@
 ![Love Chocobar](https://user-images.githubusercontent.com/35525781/96970060-c012c080-1530-11eb-926c-59edd1844413.png)
 ![Screenshot_1633403711](https://user-images.githubusercontent.com/26584526/135955251-1a5ef862-8e84-4571-9685-33b70ade14bd.png)
 
-
-
-
-
 ## Prerequisites
 
 Add this in your root `build.gradle` file (**not** your module `build.gradle` file):
@@ -176,4 +172,3 @@ Have some new ideas or found a bug? Do not hesitate to open an `issue` and make 
 ## License
 
 **ChocoBar** is under [![License: MIT](https://img.shields.io/badge/License-MIT-red.svg)](https://opensource.org/licenses/MIT). See the [LICENSE](LICENSE.md) file for more info.
-

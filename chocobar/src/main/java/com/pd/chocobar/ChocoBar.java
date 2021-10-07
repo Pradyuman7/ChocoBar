@@ -32,7 +32,6 @@ import static android.support.annotation.RestrictTo.Scope.LIBRARY_GROUP;
 public class ChocoBar {
 
     private enum Type {
-
         DEFAULT(null, null, null, null),
         GREEN(Color.parseColor("#388E3C"), R.drawable.check_mark, Color.WHITE, "SUCCESS !"),
         RED(Color.parseColor("#D50000"), R.drawable.cross_mark, Color.WHITE, "ERROR !"),
@@ -205,7 +204,6 @@ public class ChocoBar {
                 text.setCompoundDrawablesWithIntrinsicBounds(builder.icon, null, transparentHelperDrawable, null);
             text.setCompoundDrawablePadding(text.getResources().getDimensionPixelOffset(R.dimen.icon_padding));
         }
-
 
         return chocolate;
     }
@@ -457,6 +455,4 @@ public class ChocoBar {
             return new ChocoBar(this).make();
         }
     }
-
-
 }
