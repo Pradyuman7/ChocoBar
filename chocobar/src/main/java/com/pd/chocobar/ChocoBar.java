@@ -41,7 +41,7 @@ public class ChocoBar {
         BAD(Color.parseColor("#C5BEBE"), R.drawable.bad_mark, Color.WHITE, "GRAY_BAD"),
         BLACK(Color.parseColor("#000000"), R.drawable.off_notification_mark, Color.WHITE, "Black"),
         LOVE(Color.parseColor("#E8290B"), R.drawable.ic_love, Color.BLACK, "LOVE"),
-        BLOCKED(Color.parseColor("#E8290B"), R.drawable.blocked_mark, Color.BLACK, "BLOCKED");
+        BLOCKED(Color.parseColor("#E8290B"), R.drawable.blocked_mark, Color.BLACK, "BLOCKED"),
         NOTIFICATION_ON(Color.parseColor("#000000"), R.drawable.on_notification_mark, Color.WHITE, "NOTIFICATIONS ON");
 
         private Integer color;
