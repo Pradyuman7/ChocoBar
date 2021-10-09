@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_main);
 
         findViewById(R.id.button_default).setOnClickListener(v -> ChocoBar.builder()
@@ -106,6 +107,14 @@ public class MainActivity extends AppCompatActivity {
                 .setView(v)
                 .centerText()
                 .setDuration(ChocoBar.LENGTH_LONG)
-                .notificationsOn().show());
+                .notificationsOn()
+                .show());
+
+        findViewById(R.id.button_blocked).setOnClickListener(v -> ChocoBar.builder()
+                .setView(v)
+                .centerText()
+                .setDuration(ChocoBar.LENGTH_LONG)
+                .blocked()
+                .show());
     }
 }
