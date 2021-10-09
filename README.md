@@ -48,12 +48,15 @@
 ![screenshot 2018-12-31 at 4 26 00 am](https://user-images.githubusercontent.com/37071007/68586351-d6fb0700-04c7-11ea-8133-dd0e14fcd8c8.png)
 ![screenshot 2018-12-31 at 4 26 00 am](https://user-images.githubusercontent.com/37071007/68586380-e5e1b980-04c7-11ea-95eb-612167d59448.png)
 ![Love Chocobar](https://user-images.githubusercontent.com/35525781/96970060-c012c080-1530-11eb-926c-59edd1844413.png)
-![Screenshot_1633403711](https://user-images.githubusercontent.com/26584526/135955251-1a5ef862-8e84-4571-9685-33b70ade14bd.png)
+![image](https://user-images.githubusercontent.com/26584526/136639395-7a70f775-b5d3-4ad4-8b4f-d0ce91490c18.png)
+![image](https://user-images.githubusercontent.com/26584526/136639381-19bfd6f0-a34e-49f9-8b7e-4e34c4e02ba7.png)
+
+## Documentation
+[Find how to use the built-in Chocobars here](https://github.com/Pradyuman7/ChocoBar/blob/master/Documentation.md)
 
 ## Prerequisites
 
 Add this in your root `build.gradle` file (**not** your module `build.gradle` file):
-
 
 ```gradle
 allprojects {
@@ -74,95 +77,6 @@ Add this to your module's `build.gradle` file (make sure the version matches the
 dependencies {
 	implementation 'com.github.Pradyuman7:ChocoBar:V1.0'
 }
-```
-
-## Usage
-
-Each method always returns a `Snackbar` object, so you can customize the Snackbar and much more. Check out the following examples:
-
-- To display a green ChocoBar:
-
-``` java
-ChocoBar.builder().setActivity(MainActivity.this)
-		  .setText("GREEN")
-		  .setDuration(ChocoBar.LENGTH_SHORT)
-		  .green()  // in built green ChocoBar
-		  .show();
-```
-- To display a red ChocoBar:
-
-``` java
-ChocoBar.builder().setView(v)
-		  .setText("RED")
-	 	  .setDuration(ChocoBar.LENGTH_INDEFINITE)
-		  .setActionText(android.R.string.ok)
-		  .red()   // in built red ChocoBar
-		  .show();
-```     
-- To display a gray ChocoBar:
-
-``` java
-ChocoBar.builder().setView(v)
-                  .setText("GRAY_GOOD")
-		  .centerText()
-		  .setDuration(ChocoBar.LENGTH_LONG)
-		  .good()
-		  .show();
-		  
-ChocoBar.builder().setView(v)
-	          .setText("GRAY_BAD")
-		  .centerText()
-		  .setDuration(ChocoBar.LENGTH_LONG)
-		  .bad()
-		  .show();
-```  
-
-- To display a love ChocoBar:
-
-``` java
-ChocoBar.builder().setView(v)
-		  .setText("Love")
-	 	  .setDuration(ChocoBar.LENGTH_INDEFINITE)
-		  .setActionText(android.R.string.ok)
-		  .love()   // in built red ChocoBar
-		  .show();
-```   
-          
-- To display a simple ChocoBar with a button and some action on clicking the button.
-
-``` java
-ChocoBar.builder().setActivity(MainActivity.this).setActionText("ACTION")
-		.setActionClickListener(new View.OnClickListener() {
-                	@Override
-                	public void onClick(View v) {
-                     		Toast.makeText(MainActivity.this,"You clicked",Toast.LENGTH_LONG).show();
-                	}
-                	})
-		.setText("This is a normal ChocoBar")
-		.setDuration(ChocoBar.LENGTH_INDEFINITE)
-		.build()
-		.show();
-```
-      
-- You can also create custom ChocoBars with tons of customizations like this:
-``` java
-ChocoBar.builder().setBackgroundColor(Color.parseColor("#00bfff"))
-		  .setTextSize(18)
-		  .setTextColor(Color.parseColor("#FFFFFF"))
-		  .setTextTypefaceStyle(Typeface.ITALIC)
-	          .setText("This is a custom Chocobar")
-		  .setMaxLines(4)
-		  .centerText()
-		  .setActionText("ChocoBar")
-		  .setActionTextColor(Color.parseColor("#66FFFFFF"))
-	  	  .setActionTextSize(20)
-		  .setActionTextTypefaceStyle(Typeface.BOLD)
-		  .setIcon(R.mipmap.ic_launcher)
-		  .setActivity(MainActivity.this)
-		  .setDuration(ChocoBar.LENGTH_INDEFINITE)
-		  .build()
-	  	  .show();
-            
 ```
 
 ## Pull Request
