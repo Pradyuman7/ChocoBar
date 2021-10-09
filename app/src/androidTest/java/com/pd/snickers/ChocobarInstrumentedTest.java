@@ -46,6 +46,11 @@ public class ChocobarInstrumentedTest {
         assertEquals("Snackbar duration did not match the expected.", Snackbar.LENGTH_SHORT, chocoBar.getDuration());
 
         assertTrue(chocolateLayout.getBackground() instanceof GradientDrawable);
+
+        // and that it can be shown
+        chocoBar.show();
+        assertTrue(chocoBar.isShown());
+        thenWait(1000);
     }
 
     /**
@@ -76,6 +81,11 @@ public class ChocobarInstrumentedTest {
         assertEquals("Expected background color for snackbar layout to be #388E3C.",
                 Color.parseColor("#388E3C"),
                 ((ColorDrawable) chocolateLayout.getBackground()).getColor());
+
+        // and that it can be shown
+        chocoBar.show();
+        assertTrue(chocoBar.isShown());
+        thenWait(1000);
     }
 
     /**
@@ -106,6 +116,11 @@ public class ChocobarInstrumentedTest {
         assertEquals("Expected background color for snackbar layout to be #D50000.",
                 Color.parseColor("#D50000"),
                 ((ColorDrawable) chocolateLayout.getBackground()).getColor());
+
+        // and that it can be shown
+        chocoBar.show();
+        assertTrue(chocoBar.isShown());
+        thenWait(1000);
     }
 
     /**
@@ -136,6 +151,11 @@ public class ChocobarInstrumentedTest {
         assertEquals("Expected background color for snackbar layout to be #e0ffff.",
                 Color.parseColor("#e0ffff"),
                 ((ColorDrawable) chocolateLayout.getBackground()).getColor());
+
+        // and that it can be shown
+        chocoBar.show();
+        assertTrue(chocoBar.isShown());
+        thenWait(1000);
     }
 
     /**
@@ -166,6 +186,11 @@ public class ChocobarInstrumentedTest {
         assertEquals("Expected background color for snackbar layout to be #ffa500.",
                 Color.parseColor("#ffa500"),
                 ((ColorDrawable) chocolateLayout.getBackground()).getColor());
+
+        // and that it can be shown
+        chocoBar.show();
+        assertTrue(chocoBar.isShown());
+        thenWait(1000);
     }
 
     /**
@@ -196,6 +221,11 @@ public class ChocobarInstrumentedTest {
         assertEquals("Expected background color for snackbar layout to be #C5BEBE.",
                 Color.parseColor("#C5BEBE"),
                 ((ColorDrawable) chocolateLayout.getBackground()).getColor());
+
+        // and that it can be shown
+        chocoBar.show();
+        assertTrue(chocoBar.isShown());
+        thenWait(1000);
     }
 
     /**
@@ -226,6 +256,11 @@ public class ChocobarInstrumentedTest {
         assertEquals("Expected background color for snackbar layout to be #C5BEBE.",
                 Color.parseColor("#C5BEBE"),
                 ((ColorDrawable) chocolateLayout.getBackground()).getColor());
+
+        // and that it can be shown
+        chocoBar.show();
+        assertTrue(chocoBar.isShown());
+        thenWait(1000);
     }
 
     /**
@@ -256,6 +291,11 @@ public class ChocobarInstrumentedTest {
         assertEquals("Expected background color for snackbar layout to be #000000.",
                 Color.parseColor("#000000"),
                 ((ColorDrawable) chocolateLayout.getBackground()).getColor());
+
+        // and that it can be shown
+        chocoBar.show();
+        assertTrue(chocoBar.isShown());
+        thenWait(1000);
     }
 
     /**
@@ -286,6 +326,11 @@ public class ChocobarInstrumentedTest {
         assertEquals("Expected background color for snackbar layout to be #E8290B.",
                 Color.parseColor("#E8290B"),
                 ((ColorDrawable) chocolateLayout.getBackground()).getColor());
+
+        // and that it can be shown
+        chocoBar.show();
+        assertTrue(chocoBar.isShown());
+        thenWait(1000);
     }
 
     /**
@@ -316,5 +361,53 @@ public class ChocobarInstrumentedTest {
         assertEquals("Expected background color for snackbar layout to be #000000.",
                 Color.parseColor("#000000"),
                 ((ColorDrawable) chocolateLayout.getBackground()).getColor());
+
+        // and that it can be shown
+        chocoBar.show();
+        assertTrue(chocoBar.isShown());
+        thenWait(1000);
+    }
+
+    /**
+     * Verifies the blocked Chocobar type.
+     */
+    @Test
+    public void testBlockedChocobar() {
+        // Given chocobar builder
+        ChocoBar.Builder chocoBarBuilder = ChocoBar.builder()
+                .setView(activityTestRule.getActivity().getCurrentFocus());
+
+        // When building a blocked Snackbar
+        Snackbar chocoBar = chocoBarBuilder.blocked();
+
+        // Then it matches the expected configuration
+        Snackbar.SnackbarLayout chocolateLayout = (Snackbar.SnackbarLayout) chocoBar.getView();
+
+        TextView snackbarText = (TextView) chocolateLayout.findViewById(R.id.snackbar_text);
+        assertEquals(
+                "Snackbar text did not match the expected.",
+                "BLOCKED",
+                snackbarText.getText());
+
+        assertEquals("Snackbar duration did not match the expected.",
+                Snackbar.LENGTH_SHORT,
+                chocoBar.getDuration());
+
+        assertEquals("Expected background color for snackbar layout to be #E8290B.",
+                Color.parseColor("#E8290B"),
+                ((ColorDrawable) chocolateLayout.getBackground()).getColor());
+
+        // and that it can be shown
+        chocoBar.show();
+        assertTrue(chocoBar.isShown());
+        thenWait(1000);
+    }
+
+    private void thenWait(long milliseconds) {
+        try {
+            Thread.sleep(milliseconds);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 }
