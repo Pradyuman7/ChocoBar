@@ -52,7 +52,7 @@
 ![image](https://user-images.githubusercontent.com/26584526/136639381-19bfd6f0-a34e-49f9-8b7e-4e34c4e02ba7.png)
 
 ## Documentation
-[Find how to use the built-in Chocobars here](https://github.com/Pradyuman7/ChocoBar/blob/master/Documentation.md)
+[Find how to use the built-in Chocobars here](Documentation.md)
 
 ## Prerequisites
 
