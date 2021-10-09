@@ -16,11 +16,17 @@ import static org.junit.Assert.*;
  */
 @RunWith(AndroidJUnit4.class)
 public class ExampleInstrumentedTest {
+    /**
+     * Verifies that the package name of the app context returns the expected value.
+     */
     @Test
     public void useAppContext() {
-        // Context of the app under test.
+        // Given Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
+        // When getting the package name
+
+        // Then it matches the expected value
         assertEquals("com.pd.snickers", appContext.getPackageName());
     }
 }
