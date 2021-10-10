@@ -23,4 +23,10 @@
     <string name="love_chocobar">Love Chocobar</string>
     <string name="blocked_chocobar">Blocked Chocobar</string>
     <string name="notifications_on">NOTIFICATIONS ON</string>
+    <string name="next">Next View</string>
+    <string name="previous">Previous View</string>
+    <string name="chocobar">ChocoBar</string>
+    <string name="chocobar_kotlin">ChocoBar Kotlin</string>
+    <string name="kotlin_icon">Kotlin icon</string>
+    <string name="java_icon">java icon</string>
 </resources>
