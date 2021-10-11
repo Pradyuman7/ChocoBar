@@ -40,7 +40,7 @@ public class ChocobarInstrumentedTest {
 
         // Then it matches the expected configuration
         Snackbar.SnackbarLayout chocolateLayout = (Snackbar.SnackbarLayout) chocoBar.getView();
-        TextView snackbarText = (TextView) chocolateLayout.findViewById(R.id.snackbar_text);
+        TextView snackbarText = chocolateLayout.findViewById(R.id.snackbar_text);
         assertEquals("Snackbar text did not match the expected.", "", snackbarText.getText());
 
         assertEquals("Snackbar duration did not match the expected.", Snackbar.LENGTH_SHORT, chocoBar.getDuration());
@@ -68,7 +68,7 @@ public class ChocobarInstrumentedTest {
         // Then it matches the expected configuration
         Snackbar.SnackbarLayout chocolateLayout = (Snackbar.SnackbarLayout) chocoBar.getView();
 
-        TextView snackbarText = (TextView) chocolateLayout.findViewById(R.id.snackbar_text);
+        TextView snackbarText = chocolateLayout.findViewById(R.id.snackbar_text);
         assertEquals(
                 "Snackbar text did not match the expected.",
                 "SUCCESS !",
@@ -103,7 +103,7 @@ public class ChocobarInstrumentedTest {
         // Then it matches the expected configuration
         Snackbar.SnackbarLayout chocolateLayout = (Snackbar.SnackbarLayout) chocoBar.getView();
 
-        TextView snackbarText = (TextView) chocolateLayout.findViewById(R.id.snackbar_text);
+        TextView snackbarText = chocolateLayout.findViewById(R.id.snackbar_text);
         assertEquals(
                 "Snackbar text did not match the expected.",
                 "ERROR !",
@@ -138,7 +138,7 @@ public class ChocobarInstrumentedTest {
         // Then it matches the expected configuration
         Snackbar.SnackbarLayout chocolateLayout = (Snackbar.SnackbarLayout) chocoBar.getView();
 
-        TextView snackbarText = (TextView) chocolateLayout.findViewById(R.id.snackbar_text);
+        TextView snackbarText = chocolateLayout.findViewById(R.id.snackbar_text);
         assertEquals(
                 "Snackbar text did not match the expected.",
                 "CYAN",
@@ -173,7 +173,7 @@ public class ChocobarInstrumentedTest {
         // Then it matches the expected configuration
         Snackbar.SnackbarLayout chocolateLayout = (Snackbar.SnackbarLayout) chocoBar.getView();
 
-        TextView snackbarText = (TextView) chocolateLayout.findViewById(R.id.snackbar_text);
+        TextView snackbarText = chocolateLayout.findViewById(R.id.snackbar_text);
         assertEquals(
                 "Snackbar text did not match the expected.",
                 "WARNING !",
@@ -208,7 +208,7 @@ public class ChocobarInstrumentedTest {
         // Then it matches the expected configuration
         Snackbar.SnackbarLayout chocolateLayout = (Snackbar.SnackbarLayout) chocoBar.getView();
 
-        TextView snackbarText = (TextView) chocolateLayout.findViewById(R.id.snackbar_text);
+        TextView snackbarText = chocolateLayout.findViewById(R.id.snackbar_text);
         assertEquals(
                 "Snackbar text did not match the expected.",
                 "GRAY_GOOD",
@@ -243,7 +243,7 @@ public class ChocobarInstrumentedTest {
         // Then it matches the expected configuration
         Snackbar.SnackbarLayout chocolateLayout = (Snackbar.SnackbarLayout) chocoBar.getView();
 
-        TextView snackbarText = (TextView) chocolateLayout.findViewById(R.id.snackbar_text);
+        TextView snackbarText = chocolateLayout.findViewById(R.id.snackbar_text);
         assertEquals(
                 "Snackbar text did not match the expected.",
                 "GRAY_BAD",
@@ -278,7 +278,7 @@ public class ChocobarInstrumentedTest {
         // Then it matches the expected configuration
         Snackbar.SnackbarLayout chocolateLayout = (Snackbar.SnackbarLayout) chocoBar.getView();
 
-        TextView snackbarText = (TextView) chocolateLayout.findViewById(R.id.snackbar_text);
+        TextView snackbarText = chocolateLayout.findViewById(R.id.snackbar_text);
         assertEquals(
                 "Snackbar text did not match the expected.",
                 "Black",
@@ -313,7 +313,7 @@ public class ChocobarInstrumentedTest {
         // Then it matches the expected configuration
         Snackbar.SnackbarLayout chocolateLayout = (Snackbar.SnackbarLayout) chocoBar.getView();
 
-        TextView snackbarText = (TextView) chocolateLayout.findViewById(R.id.snackbar_text);
+        TextView snackbarText = chocolateLayout.findViewById(R.id.snackbar_text);
         assertEquals(
                 "Snackbar text did not match the expected.",
                 "LOVE",
@@ -348,7 +348,7 @@ public class ChocobarInstrumentedTest {
         // Then it matches the expected configuration
         Snackbar.SnackbarLayout chocolateLayout = (Snackbar.SnackbarLayout) chocoBar.getView();
 
-        TextView snackbarText = (TextView) chocolateLayout.findViewById(R.id.snackbar_text);
+        TextView snackbarText = chocolateLayout.findViewById(R.id.snackbar_text);
         assertEquals(
                 "Snackbar text did not match the expected.",
                 "NOTIFICATIONS ON",
@@ -383,7 +383,7 @@ public class ChocobarInstrumentedTest {
         // Then it matches the expected configuration
         Snackbar.SnackbarLayout chocolateLayout = (Snackbar.SnackbarLayout) chocoBar.getView();
 
-        TextView snackbarText = (TextView) chocolateLayout.findViewById(R.id.snackbar_text);
+        TextView snackbarText = chocolateLayout.findViewById(R.id.snackbar_text);
         assertEquals(
                 "Snackbar text did not match the expected.",
                 "BLOCKED",

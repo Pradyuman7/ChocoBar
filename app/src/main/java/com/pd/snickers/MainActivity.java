@@ -1,5 +1,6 @@
 package com.pd.snickers;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Bundle;
@@ -21,11 +22,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         findViewById(R.id.button_default).setOnClickListener(v -> ChocoBar.builder()
-                .setActivity(MainActivity.this).setActionText("ACTION")
+                .setActivity(MainActivity.this)
+                .setActionText("ACTION")
                 .setActionClickListener(v1 -> Toast.makeText(MainActivity.this, "You clicked", Toast.LENGTH_LONG)
                         .show())
                 .setText("This is a normal ChocoBar")
-                .setDuration(ChocoBar.LENGTH_INDEFINITE).build()
+                .setDuration(ChocoBar.LENGTH_INDEFINITE)
+                .build()
                 .show());
 
         findViewById(R.id.button_success).setOnClickListener(v -> ChocoBar
@@ -116,5 +119,10 @@ public class MainActivity extends AppCompatActivity {
                 .setDuration(ChocoBar.LENGTH_LONG)
                 .blocked()
                 .show());
+
+        findViewById(R.id.button_next).setOnClickListener(v -> {
+            Intent secondaryActivityIntent = new Intent(this, SecondaryActivity.class);
+            startActivity(secondaryActivityIntent);
+        });
     }
 }
