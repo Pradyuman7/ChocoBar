@@ -55,7 +55,7 @@ ChocoBar is now also available in Kotlin, thanks to @JamesEllerbee
 ![image](https://user-images.githubusercontent.com/26584526/136639381-19bfd6f0-a34e-49f9-8b7e-4e34c4e02ba7.png)
 
 ## Documentation
-[Find how to use the in-built Chocobars here](Documentation.md)
+[Find how to use the in-built Chocobars here](documentation/ReadMe.md)
 
 ## Prerequisites
 
