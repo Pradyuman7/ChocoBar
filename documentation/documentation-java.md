@@ -1,4 +1,4 @@
-## Usage
+# Java usage
 
 Chocobar has several built-in types which specifies color, icon, text, and text color. 
 

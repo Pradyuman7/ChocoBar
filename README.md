@@ -1,11 +1,10 @@
 # ChocoBar
 
 [![](https://www.jitpack.io/v/Pradyuman7/ChocoBar.svg)](https://www.jitpack.io/#Pradyuman7/ChocoBar)
-[![ChocoBar](https://img.shields.io/badge/Pradyuman7-ChocoBar-darkred.svg?style=flat)](https://github.com/Pradyuman7/ChocoBar)
-[ ![Download](https://api.bintray.com/packages/pradyuman7/ChocoBar/ChocoBar/images/download.svg) ](https://bintray.com/pradyuman7/ChocoBar/ChocoBar/_latestVersion)
 [![API](https://img.shields.io/badge/API-15%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=14)
-[![AwesomeAndroid](https://img.shields.io/badge/Awesome_Android-ChocoBar-purple.svg?style=flat)](https://android.libhunt.com/chocobar-alternatives)
 [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-ChocoBar-brightgreen.svg?style=flat)](https://android-arsenal.com/details/1/7415)
+[![AwesomeAndroid](https://img.shields.io/badge/Awesome_Android-ChocoBar-green.svg?style=flat)](https://android.libhunt.com/chocobar-alternatives)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
 <p align="center">
   <img width="250" height="250" src="https://user-images.githubusercontent.com/41565823/50545792-3f2c5b80-0c1c-11e9-81e6-23b0035c7b4c.gif">
@@ -35,6 +34,10 @@
 | Version 1.3   | V1.3       | New addition of Black ChocoBar and minor bug fixes                                          |
 | Version 1.4   | V1.4       | New addition of Love ChocoBar, bug fixes and addition of github actions for master branch   |
 | Version 1.5   | V1.5       | Update of in built Chocobars to have default text (editable)                                |
+| Version 1.6   | V1.6       | Add even more in built ChocoBars with different functionalities                             |
+
+## ChocoBar Kotlin
+ChocoBar is now also available in Kotlin, thanks to @JamesEllerbee
 
 ## Screenshots
 
@@ -52,7 +55,7 @@
 ![image](https://user-images.githubusercontent.com/26584526/136639381-19bfd6f0-a34e-49f9-8b7e-4e34c4e02ba7.png)
 
 ## Documentation
-[Find how to use the built-in Chocobars here](Documentation.md)
+[Find how to use the in-built Chocobars here](documentation/ReadMe.md)
 
 ## Prerequisites
 
@@ -85,4 +88,4 @@ Have some new ideas or found a bug? Do not hesitate to open an `issue` and make 
 
 ## License
 
-**ChocoBar** is under [![License: MIT](https://img.shields.io/badge/License-MIT-red.svg)](https://opensource.org/licenses/MIT). See the [LICENSE](LICENSE.md) file for more info.
+**ChocoBar** is under MIT License. See the [LICENSE](LICENSE.md) file for more info.
