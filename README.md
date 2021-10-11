@@ -35,6 +35,9 @@
 | Version 1.4   | V1.4       | New addition of Love ChocoBar, bug fixes and addition of github actions for master branch   |
 | Version 1.5   | V1.5       | Update of in built Chocobars to have default text (editable)                                |
 
+### ChocoBar Kotlin
+ChocoBar is now also available in Kotlin, thanks to @JamesEllerbee
+
 ## Screenshots
 
 **Preview of Different kinds of ChocoBars you can use**
@@ -77,9 +80,6 @@ dependencies {
 	implementation 'com.github.Pradyuman7:ChocoBar:V1.0'
 }
 ```
-
-### Kotlin
-ChocoBar is now also available in Kotlin, thanks to @JamesEllerbee
 
 ## Pull Request
 
