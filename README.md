@@ -1,10 +1,9 @@
 # ChocoBar
 
 [![](https://www.jitpack.io/v/Pradyuman7/ChocoBar.svg)](https://www.jitpack.io/#Pradyuman7/ChocoBar)
-[![ChocoBar](https://img.shields.io/badge/Pradyuman7-ChocoBar-darkred.svg?style=flat)](https://github.com/Pradyuman7/ChocoBar)
 [![API](https://img.shields.io/badge/API-15%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=14)
-[![AwesomeAndroid](https://img.shields.io/badge/Awesome_Android-ChocoBar-purple.svg?style=flat)](https://android.libhunt.com/chocobar-alternatives)
 [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-ChocoBar-brightgreen.svg?style=flat)](https://android-arsenal.com/details/1/7415)
+[![AwesomeAndroid](https://img.shields.io/badge/Awesome_Android-ChocoBar-green.svg?style=flat)](https://android.libhunt.com/chocobar-alternatives)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
 <p align="center">
@@ -56,7 +55,7 @@ ChocoBar is now also available in Kotlin, thanks to @JamesEllerbee
 ![image](https://user-images.githubusercontent.com/26584526/136639381-19bfd6f0-a34e-49f9-8b7e-4e34c4e02ba7.png)
 
 ## Documentation
-[Find how to use the built-in Chocobars here](Documentation.md)
+[Find how to use the in-built Chocobars here](Documentation.md)
 
 ## Prerequisites
 
