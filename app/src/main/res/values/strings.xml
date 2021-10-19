@@ -29,4 +29,5 @@
     <string name="chocobar_kotlin">ChocoBar Kotlin</string>
     <string name="kotlin_icon">Kotlin icon</string>
     <string name="java_icon">java icon</string>
+    <string name="info_gray">Info Gray Chocobar</string>
 </resources>

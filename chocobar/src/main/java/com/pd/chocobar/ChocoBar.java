@@ -5,6 +5,8 @@ import android.content.Context;
 import android.content.res.ColorStateList;
 import android.content.res.Configuration;
 import android.graphics.Color;
+import android.graphics.ColorFilter;
+import android.graphics.PorterDuff;
 import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
@@ -18,6 +20,7 @@ import android.support.annotation.StringRes;
 import android.support.design.widget.Snackbar;
 import android.support.v4.content.ContextCompat;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
@@ -42,7 +45,8 @@ public class ChocoBar {
         BLACK(Color.parseColor("#000000"), R.drawable.off_notification_mark, Color.WHITE, "Black"),
         LOVE(Color.parseColor("#E8290B"), R.drawable.ic_love, Color.BLACK, "LOVE"),
         BLOCKED(Color.parseColor("#E8290B"), R.drawable.blocked_mark, Color.BLACK, "BLOCKED"),
-        NOTIFICATION_ON(Color.parseColor("#000000"), R.drawable.on_notification_mark, Color.WHITE, "NOTIFICATIONS ON");
+        NOTIFICATION_ON(Color.parseColor("#000000"), R.drawable.on_notification_mark, Color.WHITE, "NOTIFICATIONS ON"),
+        INFOGRAY(Color.parseColor("#BB353535"), R.drawable.info_mark, Color.WHITE,"INFO GRAYBLUE");
 
         private Integer color;
         private Integer iconResId;
@@ -203,6 +207,10 @@ public class ChocoBar {
                 text.setCompoundDrawablesWithIntrinsicBounds(transparentHelperDrawable, null, builder.icon, null);
             else
                 text.setCompoundDrawablesWithIntrinsicBounds(builder.icon, null, transparentHelperDrawable, null);
+
+            if (Build.VERSION.SDK_INT >= 21 && builder.type == Type.INFOGRAY){
+                builder.icon.setTint(Color.parseColor("#4895ED"));
+            }
             text.setCompoundDrawablePadding(text.getResources().getDimensionPixelOffset(R.dimen.icon_padding));
         }
 
@@ -440,14 +448,20 @@ public class ChocoBar {
             return make();
         }
 
-      
+
         public Snackbar notificationsOn()
         {
             type = Type.NOTIFICATION_ON;
             return make();
         }
 
-      
+
+        public Snackbar infoGray()
+        {
+            type = Type.INFOGRAY;
+            return make();
+        }
+
         private Snackbar make() {
             if (view == null)
                 throw new IllegalStateException("ChocoBar Error: You must set an Activity or a View before making a snack");

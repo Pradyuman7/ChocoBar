@@ -120,6 +120,13 @@ public class MainActivity extends AppCompatActivity {
                 .blocked()
                 .show());
 
+        findViewById(R.id.button_info_gray).setOnClickListener(v-> ChocoBar.builder()
+                .setView(v)
+                .centerText()
+                .setDuration(ChocoBar.LENGTH_LONG)
+                .infoGray()
+                .show());
+
         findViewById(R.id.button_next).setOnClickListener(v -> {
             Intent secondaryActivityIntent = new Intent(this, SecondaryActivity.class);
             startActivity(secondaryActivityIntent);
