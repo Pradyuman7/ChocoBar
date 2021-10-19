@@ -96,6 +96,7 @@ public class MainActivity extends AppCompatActivity {
                 .setIcon(R.mipmap.ic_launcher)
                 .setActivity(MainActivity.this)
                 .setDuration(ChocoBar.LENGTH_INDEFINITE)
+                .setIconTint(Color.WHITE)
                 .build()
                 .show());
 
@@ -124,6 +125,15 @@ public class MainActivity extends AppCompatActivity {
                 .setView(v)
                 .centerText()
                 .setDuration(ChocoBar.LENGTH_LONG)
+                .infoGray()
+                .show());
+
+        findViewById(R.id.button_custom_tint).setOnClickListener(v-> ChocoBar.builder()
+                .setView(v)
+                .centerText()
+                .setDuration(ChocoBar.LENGTH_LONG)
+                .setIconTint(Color.CYAN)
+                .setText("Custom Cyan Tinted Icon")
                 .infoGray()
                 .show());
 

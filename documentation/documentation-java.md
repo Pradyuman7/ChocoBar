@@ -122,6 +122,18 @@ ChocoBar.builder()
         .show());
 ```
 
+- To display a Chocobar with Custom Icon Tint:
+```java
+ChocoBar.builder()
+	.setView(v)
+	.centerText()
+	.setDuration(ChocoBar.LENGTH_LONG)
+	.setIconTint(Color.CYAN)
+	.setText("Custom Cyan Tinted Icon")
+	.infoGray()
+	.show());
+```
+
 - You can also create highly customized ChocoBars:
 
 ``` java
