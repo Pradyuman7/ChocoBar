@@ -35,31 +35,33 @@ import static android.support.annotation.RestrictTo.Scope.LIBRARY_GROUP;
 public class ChocoBar {
 
     private enum Type {
-        DEFAULT(null, null, null, null),
-        GREEN(Color.parseColor("#388E3C"), R.drawable.check_mark, Color.WHITE, "SUCCESS !"),
-        RED(Color.parseColor("#D50000"), R.drawable.cross_mark, Color.WHITE, "ERROR !"),
-        CYAN(Color.parseColor("#e0ffff"), R.drawable.info_mark, Color.WHITE, "CYAN"),
-        ORANGE(Color.parseColor("#ffa500"), R.drawable.warning_mark, Color.BLACK, "WARNING !"),
-        GOOD(Color.parseColor("#C5BEBE"), R.drawable.good_mark, Color.WHITE, "GRAY_GOOD"),
-        BAD(Color.parseColor("#C5BEBE"), R.drawable.bad_mark, Color.WHITE, "GRAY_BAD"),
-        BLACK(Color.parseColor("#000000"), R.drawable.off_notification_mark, Color.WHITE, "Black"),
-        LOVE(Color.parseColor("#E8290B"), R.drawable.ic_love, Color.BLACK, "LOVE"),
-        BLOCKED(Color.parseColor("#E8290B"), R.drawable.blocked_mark, Color.BLACK, "BLOCKED"),
-        NOTIFICATION_ON(Color.parseColor("#000000"), R.drawable.on_notification_mark, Color.WHITE, "NOTIFICATIONS ON"),
-        INFOGRAY(Color.parseColor("#BB353535"), R.drawable.info_mark, Color.WHITE,"INFO GRAYBLUE");
+        DEFAULT(null, null, null, null, null),
+        GREEN(Color.parseColor("#388E3C"), R.drawable.check_mark, Color.WHITE, "SUCCESS !", Color.WHITE),
+        RED(Color.parseColor("#D50000"), R.drawable.cross_mark, Color.WHITE, "ERROR !", Color.WHITE),
+        CYAN(Color.parseColor("#e0ffff"), R.drawable.info_mark, Color.WHITE, "CYAN", Color.WHITE),
+        ORANGE(Color.parseColor("#ffa500"), R.drawable.warning_mark, Color.BLACK, "WARNING !", Color.BLACK),
+        GOOD(Color.parseColor("#C5BEBE"), R.drawable.good_mark, Color.WHITE, "GRAY_GOOD", Color.WHITE),
+        BAD(Color.parseColor("#C5BEBE"), R.drawable.bad_mark, Color.WHITE, "GRAY_BAD", Color.WHITE),
+        BLACK(Color.parseColor("#000000"), R.drawable.off_notification_mark, Color.WHITE, "Black", Color.WHITE),
+        LOVE(Color.parseColor("#E8290B"), R.drawable.ic_love, Color.BLACK, "LOVE", Color.BLACK),
+        BLOCKED(Color.parseColor("#E8290B"), R.drawable.blocked_mark, Color.BLACK, "BLOCKED", Color.BLACK),
+        NOTIFICATION_ON(Color.parseColor("#000000"), R.drawable.on_notification_mark, Color.WHITE, "NOTIFICATIONS ON", Color.WHITE),
+        INFOGRAY(Color.parseColor("#BB353535"), R.drawable.info_mark, Color.WHITE,"INFO GRAYBLUE", Color.parseColor("#4895ED"));
 
         private Integer color;
         private Integer iconResId;
         private Integer standardTextColor;
         private CharSequence text;
+        private Integer iconTint;
 
-        Type(@ColorInt Integer color, @DrawableRes Integer iconResId, @ColorInt Integer standardTextColor, CharSequence text) {
+        Type(@ColorInt Integer color, @DrawableRes Integer iconResId, @ColorInt Integer standardTextColor, CharSequence text, @ColorInt Integer iconTint) {
             this.color = color;
 
             this.iconResId = iconResId;
             this.standardTextColor = standardTextColor;
 
             this.text = text;
+            this.iconTint = iconTint;
         }
 
         public Integer getColor() {
@@ -86,6 +88,8 @@ public class ChocoBar {
         public CharSequence getText() {
             return text;
         }
+
+        public Integer getIconTint(){return iconTint;}
     }
 
     private final Builder builder;
@@ -208,8 +212,13 @@ public class ChocoBar {
             else
                 text.setCompoundDrawablesWithIntrinsicBounds(builder.icon, null, transparentHelperDrawable, null);
 
-            if (Build.VERSION.SDK_INT >= 21 && builder.type == Type.INFOGRAY){
-                builder.icon.setTint(Color.parseColor("#4895ED"));
+            if (Build.VERSION.SDK_INT >= 21 && builder.iconTint != null){
+                builder.icon.setTint(builder.iconTint);
+                Log.d("TAG","HERE");
+            }
+            else if(Build.VERSION.SDK_INT >= 21 && builder.iconTint == null ){
+                builder.icon.setTint(builder.type.getIconTint());
+                Log.d("TAG","NOHERE");
             }
             text.setCompoundDrawablePadding(text.getResources().getDimensionPixelOffset(R.dimen.icon_padding));
         }
@@ -260,6 +269,7 @@ public class ChocoBar {
         private Drawable icon = null;
         private int iconResId = 0;
         private Integer backgroundColor = null;
+        private Integer iconTint = null;
 
         private Builder() {
         }
@@ -394,6 +404,11 @@ public class ChocoBar {
 
         public Builder setBackgroundColor(@ColorInt int color) {
             this.backgroundColor = color;
+            return this;
+        }
+
+        public Builder setIconTint(@ColorInt int color){
+            this.iconTint = color;
             return this;
         }
 
