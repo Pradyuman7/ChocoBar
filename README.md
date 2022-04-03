@@ -36,6 +36,7 @@
 | Version 1.5   | V1.5       | Update of in built Chocobars to have default text (editable)                                |
 | Version 1.6   | V1.6       | Add even more in built ChocoBars with different functionalities                             |
 | Version 1.7   | V1.7       | ChocoBar for Kotlin with performance improvement and small bug fixes                        |
+| Version 2.0   | V2.0       | Color tined icons, additional ready-to-use Chocobars and more                               |
 
 ## ChocoBar Kotlin
 ChocoBar is now also available in Kotlin, thanks to @JamesEllerbee
