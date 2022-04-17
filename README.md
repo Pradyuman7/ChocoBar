@@ -32,8 +32,8 @@
 | Version 1.1   | V1.1       | Minor bug fixes and performance improvements                                                |
 | Version 1.2   | V1.2       | New good gray and bad gray ChocoBar additions and RTL languages support                     |
 | Version 1.3   | V1.3       | New addition of Black ChocoBar and minor bug fixes                                          |
-| Version 1.4   | V1.4       | New addition of Love ChocoBar, bug fixes and addition of github actions for master branch   |
-| Version 1.5   | V1.5       | Update of in built Chocobars to have default text (editable)                                |
+| Version 1.4   | V1.4       | New in-built ChocoBars, minor bug fixes & some dev changes                                  |
+| Version 1.5   | V1.5       | Update of in-built Chocobars to have default text (editable)                                |
 | Version 1.6   | V1.6       | Add even more in built ChocoBars with different functionalities                             |
 | Version 1.7   | V1.7       | ChocoBar for Kotlin with performance improvement and small bug fixes                        |
 | Version 2.0   | V2.0       | Color tined icons, additional ready-to-use Chocobars and more                               |
@@ -55,8 +55,8 @@ ChocoBar is now also available in Kotlin, thanks to @JamesEllerbee
 ![Love Chocobar](https://user-images.githubusercontent.com/35525781/96970060-c012c080-1530-11eb-926c-59edd1844413.png)
 ![image](https://user-images.githubusercontent.com/26584526/136639395-7a70f775-b5d3-4ad4-8b4f-d0ce91490c18.png)
 ![image](https://user-images.githubusercontent.com/26584526/136639381-19bfd6f0-a34e-49f9-8b7e-4e34c4e02ba7.png)
-<img src="https://user-images.githubusercontent.com/36191408/137777366-738ce9c7-d942-4ccb-845a-38f4891196ea.png" width=40% >
-<img src="https://user-images.githubusercontent.com/36191408/138039703-976e65b1-c65a-47ea-865d-5d54a7951e3e.png" width=40% >
+<img src="https://user-images.githubusercontent.com/36191408/137777366-738ce9c7-d942-4ccb-845a-38f4891196ea.png" width=38% >
+<img src="https://user-images.githubusercontent.com/36191408/138039703-976e65b1-c65a-47ea-865d-5d54a7951e3e.png" width=38% >
 
 >Custom Cyan Tint was used on Info Gray.
 
@@ -87,10 +87,6 @@ dependencies {
 	implementation 'com.github.Pradyuman7:ChocoBar:V1.0'
 }
 ```
-
-## Pull Request
-
-Have some new ideas or found a bug? Do not hesitate to open an `issue` and make a `pull request`.
 
 ## License
 
