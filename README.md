@@ -45,20 +45,23 @@ ChocoBar is now also available in Kotlin, thanks to @JamesEllerbee
 
 <table>
   <tr>
-    <td> <img src="https://user-images.githubusercontent.com/41565823/50554067-56b72300-0cb4-11e9-8b04-8f12b09820d9.png" width=300px height=250px> </td>
-    <td> <img src="https://user-images.githubusercontent.com/41565823/50554071-574fb980-0cb4-11e9-9c0d-95f0df30f72c.png" width=300px height=250px> </td>
-    <td> <img src="https://user-images.githubusercontent.com/41565823/50554069-574fb980-0cb4-11e9-95f5-df24d2a56a96.png" width=300px height=250px> </td>
+    <td> <img src="https://user-images.githubusercontent.com/41565823/50554067-56b72300-0cb4-11e9-8b04-8f12b09820d9.png" width=400px height=350px> </td>
+    <td> <img src="https://user-images.githubusercontent.com/41565823/50554071-574fb980-0cb4-11e9-9c0d-95f0df30f72c.png" width=400px height=350px> </td>
   </tr> 
 	
   <tr>
-    <td> <img src="https://user-images.githubusercontent.com/41565823/50554070-574fb980-0cb4-11e9-8a7d-0ab8b061e120.png" width=300px height=250px> </td>
-    <td> <img src="https://user-images.githubusercontent.com/41565823/50554068-574fb980-0cb4-11e9-96f2-7802ad3a400f.png" width=300px height=250px> </td>
-    <td> <img src="https://user-images.githubusercontent.com/37071007/68586351-d6fb0700-04c7-11ea-8133-dd0e14fcd8c8.png" width=300px height=250px> </td>
+    <td> <img src="https://user-images.githubusercontent.com/41565823/50554069-574fb980-0cb4-11e9-95f5-df24d2a56a96.png" width=400px height=350px> </td>
+    <td> <img src="https://user-images.githubusercontent.com/41565823/50554070-574fb980-0cb4-11e9-8a7d-0ab8b061e120.png" width=400px height=350px> </td>
+  </tr>
+	
+  <tr>
+    <td> <img src="https://user-images.githubusercontent.com/41565823/50554068-574fb980-0cb4-11e9-96f2-7802ad3a400f.png" width=400px height=350px> </td>
+    <td> <img src="https://user-images.githubusercontent.com/37071007/68586351-d6fb0700-04c7-11ea-8133-dd0e14fcd8c8.png" width=400px height=350px> </td>
   </tr> 
 	
   <tr>
-    <td> <img src="https://user-images.githubusercontent.com/37071007/68586380-e5e1b980-04c7-11ea-95eb-612167d59448.png" width=300px height=250px> </td>
-    <td> <img src="https://user-images.githubusercontent.com/35525781/96970060-c012c080-1530-11eb-926c-59edd1844413.png" width=300px height=250px> </td>
+    <td> <img src="https://user-images.githubusercontent.com/37071007/68586380-e5e1b980-04c7-11ea-95eb-612167d59448.png" width=400px height=350px> </td>
+    <td> <img src="https://user-images.githubusercontent.com/35525781/96970060-c012c080-1530-11eb-926c-59edd1844413.png" width=400px height=350px> </td>
   </tr> 
 </table>
 <table>
