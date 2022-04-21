@@ -43,22 +43,35 @@ ChocoBar is now also available in Kotlin, thanks to @JamesEllerbee
 
 ## Screenshots
 
-**Preview of Different kinds of ChocoBars you can use**
-
-![screenshot 2018-12-31 at 4 26 25 am](https://user-images.githubusercontent.com/41565823/50554067-56b72300-0cb4-11e9-8b04-8f12b09820d9.png)
-![screenshot 2018-12-31 at 4 24 32 am](https://user-images.githubusercontent.com/41565823/50554071-574fb980-0cb4-11e9-9c0d-95f0df30f72c.png)
-![screenshot 2018-12-31 at 4 25 38 am](https://user-images.githubusercontent.com/41565823/50554069-574fb980-0cb4-11e9-95f5-df24d2a56a96.png)
-![screenshot 2018-12-31 at 4 25 09 am](https://user-images.githubusercontent.com/41565823/50554070-574fb980-0cb4-11e9-8a7d-0ab8b061e120.png)
-![screenshot 2018-12-31 at 4 26 00 am](https://user-images.githubusercontent.com/41565823/50554068-574fb980-0cb4-11e9-96f2-7802ad3a400f.png)
-![screenshot 2018-12-31 at 4 26 00 am](https://user-images.githubusercontent.com/37071007/68586351-d6fb0700-04c7-11ea-8133-dd0e14fcd8c8.png)
-![screenshot 2018-12-31 at 4 26 00 am](https://user-images.githubusercontent.com/37071007/68586380-e5e1b980-04c7-11ea-95eb-612167d59448.png)
-![Love Chocobar](https://user-images.githubusercontent.com/35525781/96970060-c012c080-1530-11eb-926c-59edd1844413.png)
-![image](https://user-images.githubusercontent.com/26584526/136639395-7a70f775-b5d3-4ad4-8b4f-d0ce91490c18.png)
-![image](https://user-images.githubusercontent.com/26584526/136639381-19bfd6f0-a34e-49f9-8b7e-4e34c4e02ba7.png)
-<img src="https://user-images.githubusercontent.com/36191408/137777366-738ce9c7-d942-4ccb-845a-38f4891196ea.png" width=38% >
-<img src="https://user-images.githubusercontent.com/36191408/138039703-976e65b1-c65a-47ea-865d-5d54a7951e3e.png" width=38% >
-
->Custom Cyan Tint was used on Info Gray.
+<table>
+  <tr>
+    <td> <img src="https://user-images.githubusercontent.com/41565823/50554067-56b72300-0cb4-11e9-8b04-8f12b09820d9.png" width=300px height=250px> </td>
+    <td> <img src="https://user-images.githubusercontent.com/41565823/50554071-574fb980-0cb4-11e9-9c0d-95f0df30f72c.png" width=300px height=250px> </td>
+    <td> <img src="https://user-images.githubusercontent.com/41565823/50554069-574fb980-0cb4-11e9-95f5-df24d2a56a96.png" width=300px height=250px> </td>
+  </tr> 
+	
+  <tr>
+    <td> <img src="https://user-images.githubusercontent.com/41565823/50554070-574fb980-0cb4-11e9-8a7d-0ab8b061e120.png" width=300px height=250px> </td>
+    <td> <img src="https://user-images.githubusercontent.com/41565823/50554068-574fb980-0cb4-11e9-96f2-7802ad3a400f.png" width=300px height=250px> </td>
+    <td> <img src="https://user-images.githubusercontent.com/37071007/68586351-d6fb0700-04c7-11ea-8133-dd0e14fcd8c8.png" width=300px height=250px> </td>
+  </tr> 
+	
+  <tr>
+    <td> <img src="https://user-images.githubusercontent.com/37071007/68586380-e5e1b980-04c7-11ea-95eb-612167d59448.png" width=300px height=250px> </td>
+    <td> <img src="https://user-images.githubusercontent.com/35525781/96970060-c012c080-1530-11eb-926c-59edd1844413.png" width=300px height=250px> </td>
+  </tr> 
+</table>
+<table>
+  <tr>
+    <td> <img src="https://user-images.githubusercontent.com/26584526/136639395-7a70f775-b5d3-4ad4-8b4f-d0ce91490c18.png" width=400px height=150px> </td>
+    <td> <img src="https://user-images.githubusercontent.com/26584526/136639381-19bfd6f0-a34e-49f9-8b7e-4e34c4e02ba7.png" width=400px height=150px> </td>
+  </tr> 
+	
+  <tr>
+    <td> <img src="https://user-images.githubusercontent.com/36191408/137777366-738ce9c7-d942-4ccb-845a-38f4891196ea.png" width=400px height=150px> </td>
+    <td> <img src="https://user-images.githubusercontent.com/36191408/138039703-976e65b1-c65a-47ea-865d-5d54a7951e3e.png" width=400px height=150px> </td>
+  </tr>
+</table>
 
 ## Documentation
 [Find how to use the in-built Chocobars here](documentation/ReadMe.md)
