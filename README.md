@@ -1,10 +1,6 @@
 # ChocoBar
 
-[![](https://www.jitpack.io/v/Pradyuman7/ChocoBar.svg)](https://www.jitpack.io/#Pradyuman7/ChocoBar)
-[![API](https://img.shields.io/badge/API-15%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=14)
-[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-ChocoBar-brightgreen.svg?style=flat)](https://android-arsenal.com/details/1/7415)
-[![AwesomeAndroid](https://img.shields.io/badge/Awesome_Android-ChocoBar-green.svg?style=flat)](https://android.libhunt.com/chocobar-alternatives)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+[![](https://www.jitpack.io/v/Pradyuman7/ChocoBar.svg)](https://www.jitpack.io/#Pradyuman7/ChocoBar) [![API](https://img.shields.io/badge/API-15%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=14) [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-ChocoBar-brightgreen.svg?style=flat)](https://android-arsenal.com/details/1/7415) [![AwesomeAndroid](https://img.shields.io/badge/Awesome_Android-ChocoBar-green.svg?style=flat)](https://android.libhunt.com/chocobar-alternatives) [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
 <p align="center">
   <img width="250" height="250" src="https://user-images.githubusercontent.com/41565823/50545792-3f2c5b80-0c1c-11e9-81e6-23b0035c7b4c.gif">
