@@ -6,9 +6,9 @@ import static org.junit.Assert.assertTrue;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.GradientDrawable;
-import android.support.design.widget.Snackbar;
-import android.support.test.rule.ActivityTestRule;
-import android.support.test.runner.AndroidJUnit4;
+import com.google.android.material.snackbar.Snackbar;
+import androidx.test.rule.ActivityTestRule;
+import androidx.test.ext.junit.runners.AndroidJUnit4;
 import android.widget.TextView;
 
 import com.pd.chocobar.ChocoBar;

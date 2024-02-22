@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.circularreveal.CircularRevealRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.google.android.material.circularreveal.CircularRevealRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
-        <android.support.design.circularreveal.CircularRevealRelativeLayout
+        <com.google.android.material.circularreveal.CircularRevealRelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
@@ -310,6 +310,6 @@
                 android:scaleType="centerCrop"
                 android:src="@drawable/kotlin_icon" />
 
-        </android.support.design.circularreveal.CircularRevealRelativeLayout>
+        </com.google.android.material.circularreveal.CircularRevealRelativeLayout>
     </ScrollView>
-</android.support.design.circularreveal.CircularRevealRelativeLayout>
+</com.google.android.material.circularreveal.CircularRevealRelativeLayout>
